@@ -1,6 +1,7 @@
 package com.tutorialmod.block;
 
 import com.tutorialmod.TutorialMod;
+import com.tutorialmod.block.custom.MagicBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -56,6 +57,15 @@ public class ModBlocks {
                             .sounds(BlockSoundGroup.DEEPSLATE)
             )
     );
+    public static final Block MAGIC_BLOCK = registerBlock(
+            "magic_block",
+            new MagicBlock(
+                    AbstractBlock.Settings.create()
+                            .strength(1f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.FROGSPAWN)
+            )
+            );
 
 
     //Registers the block
