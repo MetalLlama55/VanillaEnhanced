@@ -5,6 +5,7 @@ import com.tutorialmod.item.ModItemGroups;
 import com.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,5 +19,7 @@ public class TutorialMod implements ModInitializer {
 
 		ModItems.registerModItems(); //Needed so that items can be added on startup
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
 	}
 }
