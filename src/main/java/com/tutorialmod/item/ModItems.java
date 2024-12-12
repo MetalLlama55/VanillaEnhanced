@@ -1,6 +1,7 @@
 package com.tutorialmod.item;
 
 import com.tutorialmod.TutorialMod;
+import com.tutorialmod.item.custom.ChiselItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -13,6 +14,11 @@ public class ModItems { //Class needed to register new items, must be in item fo
    //To add new items use same syntax
     public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings())); //Adds the pink_garnet item to the game
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()));
+
+    public static final Item CHISEL = registerItem("chisel", new ChiselItem(new Item.Settings().maxDamage(32)));
+
+    public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER)));
+    public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()));
 
     //Helper method for registering items
     private static Item registerItem(String name, Item item) {
