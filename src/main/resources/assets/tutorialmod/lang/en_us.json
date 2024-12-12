@@ -4,6 +4,7 @@
   "item.tutorialmod.chisel": "Chisel",
 
   "item.tutorialmod.cauliflower": "Cauliflower",
+  "tooltip.tutorialmod.cauliflower.tooltip": "Tasty",
 
   "item.tutorialmod.starlight_ashes": "Starlight Ashes",
 
@@ -12,6 +13,10 @@
   "block.tutorialmod.pink_garnet_ore": "Pink Garnet Ore",
   "block.tutorialmod.pink_garnet_deepslate_ore": "Deepslate Pink Garnet Ore",
   "block.tutorialmod.magic_block": "Magic Block",
+
+  "tooltip.tutorialmod.magic_block.tooltip": "This block emits some §bmagical§r properties",
+  "tooltip.tutorialmod.chisel.shift_down": "This chisel can change some blocks into brick versions",
+  "tooltip.tutorialmod.chisel": "Press §eShift§r for some more information",
 
   "itemgroup.tutorialmod.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks"
