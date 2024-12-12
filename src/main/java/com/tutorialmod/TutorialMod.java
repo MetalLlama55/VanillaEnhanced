@@ -1,6 +1,7 @@
 package com.tutorialmod;
 
 import com.tutorialmod.block.ModBlocks;
+import com.tutorialmod.item.ModItemGroups;
 import com.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,6 +14,8 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems(); //Needed so that items can be added on startup
 		ModBlocks.registerModBlocks();
 	}
