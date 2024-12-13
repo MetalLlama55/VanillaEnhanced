@@ -2,6 +2,7 @@ package com.tutorialmod.block;
 
 import com.tutorialmod.TutorialMod;
 import com.tutorialmod.block.custom.MagicBlock;
+import com.tutorialmod.block.custom.PinkGarnetLampBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -143,6 +144,15 @@ public class ModBlocks {
                             .strength(4f)
                             .requiresTool()
                             .nonOpaque() //Allows the transparent part of the texture to be visible
+            )
+    );
+    public static final Block PINK_GARNET_LAMP = registerBlock(
+            "pink_garnet_lamp",
+            new PinkGarnetLampBlock(
+                    AbstractBlock.Settings.create()
+                            .strength(1f)
+                            .requiresTool()
+                            .luminance(state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0) //If clicked it emits brightness of 15 else 0
             )
     );
 
