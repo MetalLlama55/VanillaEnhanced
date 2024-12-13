@@ -8,10 +8,26 @@
 
   "item.tutorialmod.starlight_ashes": "Starlight Ashes",
 
+  "item.tutorialmod.pink_garnet_sword": "Pink Garnet Sword",
+  "item.tutorialmod.pink_garnet_axe": "Pink Garnet Axe",
+  "item.tutorialmod.pink_garnet_pickaxe": "Pink Garnet Pickaxe",
+  "item.tutorialmod.pink_garnet_shovel": "Pink Garnet Shovel",
+  "item.tutorialmod.pink_garnet_hoe": "Pink Garnet Hoe",
+
   "block.tutorialmod.pink_garnet_block": "Pink Garnet Block",
   "block.tutorialmod.raw_pink_garnet_block": "Raw Pink Garnet Block",
   "block.tutorialmod.pink_garnet_ore": "Pink Garnet Ore",
   "block.tutorialmod.pink_garnet_deepslate_ore": "Deepslate Pink Garnet Ore",
+  "block.tutorialmod.pink_garnet_stairs": "Pink Garnet Stairs",
+  "block.tutorialmod.pink_garnet_slab": "Pink Garnet Slab",
+  "block.tutorialmod.pink_garnet_button": "Pink Garnet Button",
+  "block.tutorialmod.pink_garnet_pressure_plate": "Pink Garnet Pressure Plate",
+  "block.tutorialmod.pink_garnet_fence": "Pink Garnet Fence",
+  "block.tutorialmod.pink_garnet_fence_gate": "Pink Garnet Fence Gate",
+  "block.tutorialmod.pink_garnet_wall": "Pink Garnet Wall",
+  "block.tutorialmod.pink_garnet_door": "Pink Garnet Door",
+  "block.tutorialmod.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
+  "block.tutorialmod.pink_garnet_lamp": "Pink Garnet Lamp",
   "block.tutorialmod.magic_block": "Magic Block",
 
   "tooltip.tutorialmod.magic_block.tooltip": "This block emits some §bmagical§r properties",

@@ -2,10 +2,9 @@ package com.tutorialmod.block;
 
 import com.tutorialmod.TutorialMod;
 import com.tutorialmod.block.custom.MagicBlock;
+import com.tutorialmod.block.custom.PinkGarnetLampBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -65,7 +64,97 @@ public class ModBlocks {
                             .requiresTool()
                             .sounds(BlockSoundGroup.FROGSPAWN)
             )
-            );
+    );
+    public static final Block PINK_GARNET_STAIRS = registerBlock(
+            "pink_garnet_stairs",
+            new StairsBlock(
+                    ModBlocks.PINK_GARNET_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .strength(4f)
+                            .requiresTool()
+            )
+    );
+    public static final Block PINK_GARNET_SLAB = registerBlock(
+            "pink_garnet_slab",
+            new SlabBlock(
+                    AbstractBlock.Settings.create()
+                            .strength(4f)
+                            .requiresTool()
+            )
+    );
+    public static final Block PINK_GARNET_BUTTON = registerBlock(
+            "pink_garnet_button",
+            new ButtonBlock(
+                    BlockSetType.IRON, 10,
+                    AbstractBlock.Settings.create()
+                            .strength(4f)
+                            .requiresTool()
+                            .noCollision() //Button has no collision so needs this
+            )
+    );
+    public static final Block PINK_GARNET_PRESSURE_PLATE = registerBlock(
+            "pink_garnet_pressure_plate",
+            new PressurePlateBlock(
+                    BlockSetType.IRON,
+                    AbstractBlock.Settings.create()
+                            .strength(4f)
+                            .requiresTool()
+            )
+    );
+    public static final Block PINK_GARNET_FENCE = registerBlock(
+            "pink_garnet_fence",
+            new FenceBlock(
+                    AbstractBlock.Settings.create()
+                            .strength(4f)
+                            .requiresTool()
+            )
+    );
+    public static final Block PINK_GARNET_FENCE_GATE = registerBlock(
+            "pink_garnet_fence_gate",
+            new FenceGateBlock(
+                    WoodType.ACACIA,
+                    AbstractBlock.Settings.create()
+                            .strength(4f)
+                            .requiresTool()
+            )
+    );
+    public static final Block PINK_GARNET_WALL = registerBlock(
+            "pink_garnet_wall",
+            new WallBlock(
+                    AbstractBlock.Settings.create()
+                            .strength(4f)
+                            .requiresTool()
+            )
+    );
+    public static final Block PINK_GARNET_DOOR = registerBlock(
+            "pink_garnet_door",
+            new DoorBlock(
+                    BlockSetType.IRON,
+                    AbstractBlock.Settings.create()
+                            .strength(4f)
+                            .requiresTool()
+                            .nonOpaque() //Allows the transparent part of the texture to be visible
+            )
+    );
+    public static final Block PINK_GARNET_TRAP_DOOR = registerBlock(
+            "pink_garnet_trapdoor",
+            new TrapdoorBlock(
+                    BlockSetType.IRON,
+                    AbstractBlock.Settings.create()
+                            .strength(4f)
+                            .requiresTool()
+                            .nonOpaque() //Allows the transparent part of the texture to be visible
+            )
+    );
+    public static final Block PINK_GARNET_LAMP = registerBlock(
+            "pink_garnet_lamp",
+            new PinkGarnetLampBlock(
+                    AbstractBlock.Settings.create()
+                            .strength(1f)
+                            .requiresTool()
+                            .luminance(state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0) //If clicked it emits brightness of 15 else 0
+            )
+    );
 
 
     //Registers the block

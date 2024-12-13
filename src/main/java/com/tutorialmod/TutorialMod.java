@@ -1,6 +1,7 @@
 package com.tutorialmod;
 
 import com.tutorialmod.block.ModBlocks;
+import com.tutorialmod.component.ModDataComponentTypes;
 import com.tutorialmod.item.ModItemGroups;
 import com.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -19,6 +20,8 @@ public class TutorialMod implements ModInitializer {
 
 		ModItems.registerModItems(); //Needed so that items can be added on startup
 		ModBlocks.registerModBlocks();
+
+		ModDataComponentTypes.registerDataComponentTypes();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
 	}
