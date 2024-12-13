@@ -34,7 +34,7 @@ public class ModRecipieProvider extends FabricRecipeProvider {
         offerSmelting(recipeExporter, PINK_GARNET_SMELTABLES, RecipeCategory.MISC, ModItems.PINK_GARNET, 0.25f, 200, "pink_garnet");
         offerBlasting(recipeExporter, PINK_GARNET_SMELTABLES, RecipeCategory.MISC, ModItems.PINK_GARNET, 0.25f, 100, "pink_garnet");
 
-        ///Allows for recipies like diamond block to 9 diamonds and the reverse
+        ///Allows for recipes like diamond block to 9 diamonds and the reverse
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PINK_GARNET, RecipeCategory.DECORATIONS, ModBlocks.PINK_GARNET_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_PINK_GARNET, RecipeCategory.DECORATIONS, ModBlocks.RAW_PINK_GARNET_BLOCK);
 
@@ -61,6 +61,8 @@ public class ModRecipieProvider extends FabricRecipeProvider {
                 .input(ModBlocks.RAW_PINK_GARNET_BLOCK)
                 .criterion(hasItem(ModBlocks.PINK_GARNET_BLOCK), conditionsFromItem(ModBlocks.PINK_GARNET_BLOCK))
                 .offerTo(recipeExporter);
+
+
     }
 
 }
