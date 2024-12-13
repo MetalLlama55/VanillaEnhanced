@@ -2,6 +2,7 @@ package com.tutorialmod.item;
 
 import com.tutorialmod.TutorialMod;
 import com.tutorialmod.item.custom.ChiselItem;
+import com.tutorialmod.item.custom.HammerItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -50,7 +51,10 @@ public class ModItems { //Class needed to register new items, must be in item fo
             "pink_garnet_hoe",
             new HoeItem(ModToolMaterials.PINK_GARNET,
                     new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 1, -1.5f))));
-
+    public static final Item PINK_GARNET_HAMMER = registerItem(
+            "pink_garnet_hammer",
+            new HammerItem(ModToolMaterials.PINK_GARNET,
+                    new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 7, 3.5f))));
 
     //Helper method for registering items
     private static Item registerItem(String name, Item item) {
