@@ -3,6 +3,7 @@ package com.tutorialmod.item;
 import com.tutorialmod.TutorialMod;
 import com.tutorialmod.item.custom.ChiselItem;
 import com.tutorialmod.item.custom.HammerItem;
+import com.tutorialmod.item.custom.ModArmorItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -59,7 +60,7 @@ public class ModItems { //Class needed to register new items, must be in item fo
     //Pink Garnet Armor
     public static final Item PINK_GARNET_HELMET = registerItem(
             "pink_garnet_helmet",
-            new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
     public static final Item PINK_GARNET_CHESTPLATE = registerItem(
             "pink_garnet_chestplate",

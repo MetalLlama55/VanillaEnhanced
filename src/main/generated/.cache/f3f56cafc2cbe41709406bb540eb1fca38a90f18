@@ -1,6 +1,6 @@
-// 1.21	2024-12-13T20:07:01.5424035	Tutorial Mod/Tags for minecraft:item
-092261f42ebfb549fb26de57a2f4a5a8b86bc6b9 data\tutorialmod\tags\item\transformable_items.json
+// 1.21	2024-12-13T23:14:00.4026514	Tutorial Mod/Tags for minecraft:item
 8f653a3350d8f1fbd15d245e7de66379a30930e2 data\minecraft\tags\item\swords.json
+092261f42ebfb549fb26de57a2f4a5a8b86bc6b9 data\tutorialmod\tags\item\transformable_items.json
 840726859672b531edb33e064e2e0943de7fc82d data\minecraft\tags\item\pickaxes.json
 8ced195f504be266fa1818b0cfbd2ee244987195 data\minecraft\tags\item\axes.json
 1a39dedd310f06bf1a624b4363f683ebe3b2905b data\minecraft\tags\item\trimmable_armor.json
