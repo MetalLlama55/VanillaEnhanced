@@ -1,9 +1,8 @@
 {
   "values": [
-    "tutorialmod:pink_garnet",
-    "tutorialmod:raw_pink_garnet",
-    "minecraft:coal",
-    "minecraft:stick",
-    "minecraft:apple"
+    "minecraft:iron_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:diamond",
+    "minecraft:netherite_ingot"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "building",
   "key": {
     "G": {
       "item": "tutorialmod:pink_garnet"
@@ -11,11 +11,11 @@
   },
   "pattern": [
     "   ",
-    " G ",
-    "S  "
+    "SGS",
+    "SGS"
   ],
   "result": {
     "count": 1,
-    "id": "tutorialmod:chisel"
+    "id": "tutorialmod:pink_garnet_fence_gate"
   }
 }

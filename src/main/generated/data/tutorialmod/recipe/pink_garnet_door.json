@@ -1,21 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "building",
   "key": {
     "G": {
       "item": "tutorialmod:pink_garnet"
-    },
-    "S": {
-      "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "   ",
-    " G ",
-    "S  "
+    "GG ",
+    "GG ",
+    "GG "
   ],
   "result": {
-    "count": 1,
-    "id": "tutorialmod:chisel"
+    "count": 3,
+    "id": "tutorialmod:pink_garnet_door"
   }
 }

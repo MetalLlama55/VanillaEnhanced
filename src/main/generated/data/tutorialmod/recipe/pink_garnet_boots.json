@@ -1,21 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "equipment",
   "key": {
     "G": {
       "item": "tutorialmod:pink_garnet"
     },
-    "S": {
-      "item": "minecraft:stick"
+    "I": {
+      "item": "minecraft:iron_boots"
     }
   },
   "pattern": [
     "   ",
-    " G ",
-    "S  "
+    "G G",
+    "GIG"
   ],
   "result": {
     "count": 1,
-    "id": "tutorialmod:chisel"
+    "id": "tutorialmod:pink_garnet_boots"
   }
 }

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "equipment",
   "key": {
     "G": {
       "item": "tutorialmod:pink_garnet"
@@ -10,12 +10,12 @@
     }
   },
   "pattern": [
-    "   ",
-    " G ",
-    "S  "
+    " GG",
+    " S ",
+    " S "
   ],
   "result": {
     "count": 1,
-    "id": "tutorialmod:chisel"
+    "id": "tutorialmod:pink_garnet_hoe"
   }
 }

@@ -3,31 +3,31 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "tutorialmod:pink_garnet_block"
+      "item": "minecraft:diamond_block"
     },
     {
-      "item": "tutorialmod:pink_garnet_block"
+      "item": "minecraft:iron_ingot"
     },
     {
-      "item": "tutorialmod:pink_garnet_block"
+      "item": "minecraft:iron_ingot"
     },
     {
-      "item": "tutorialmod:pink_garnet_block"
+      "item": "minecraft:iron_ingot"
     },
     {
-      "item": "tutorialmod:pink_garnet_block"
+      "item": "minecraft:iron_ingot"
     },
     {
-      "item": "tutorialmod:pink_garnet_block"
+      "item": "minecraft:gold_ingot"
     },
     {
-      "item": "tutorialmod:pink_garnet_block"
+      "item": "minecraft:gold_ingot"
     },
     {
-      "item": "tutorialmod:pink_garnet_block"
+      "item": "minecraft:gold_ingot"
     },
     {
-      "item": "tutorialmod:raw_pink_garnet_block"
+      "item": "minecraft:gold_ingot"
     }
   ],
   "result": {

@@ -1,21 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "building",
   "key": {
     "G": {
       "item": "tutorialmod:pink_garnet"
-    },
-    "S": {
-      "item": "minecraft:stick"
     }
   },
   "pattern": [
     "   ",
-    " G ",
-    "S  "
+    "   ",
+    "GG "
   ],
   "result": {
     "count": 1,
-    "id": "tutorialmod:chisel"
+    "id": "tutorialmod:pink_garnet_pressure_plate"
   }
 }
