@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tutorialmod:pink_garnet_block"
+    },
+    {
+      "item": "tutorialmod:pink_garnet_block"
+    },
+    {
+      "item": "tutorialmod:pink_garnet_block"
+    },
+    {
+      "item": "tutorialmod:pink_garnet_block"
+    },
+    {
+      "item": "tutorialmod:pink_garnet_block"
+    },
+    {
+      "item": "tutorialmod:pink_garnet_block"
+    },
+    {
+      "item": "tutorialmod:pink_garnet_block"
+    },
+    {
+      "item": "tutorialmod:pink_garnet_block"
+    },
+    {
+      "item": "tutorialmod:raw_pink_garnet_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:magic_block"
+  }
+}
