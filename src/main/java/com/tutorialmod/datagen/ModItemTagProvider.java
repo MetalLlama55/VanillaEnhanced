@@ -20,7 +20,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
-                .add(Items.IRON_INGOT)
                 .add(Items.GOLD_INGOT)
                 .add(Items.DIAMOND)
                 .add(Items.NETHERITE_INGOT);
@@ -36,11 +35,29 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.PINK_GARNET_HOE);
 
+        //Vanilla Enhanced Tags
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ModItems.ENDSTONE_SWORD);
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.ENDSTONE_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.ENDSTONE_AXE);
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ModItems.ENDSTONE_SHOVEL);
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ModItems.ENDSTONE_HOE);
+
+
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.PINK_GARNET_HELMET)
                 .add(ModItems.PINK_GARNET_CHESTPLATE)
                 .add(ModItems.PINK_GARNET_LEGGINGS)
-                .add(ModItems.PINK_GARNET_BOOTS);
+                .add(ModItems.PINK_GARNET_BOOTS)
+
+                .add(ModItems.ENDSTONE_HELMET)
+                .add(ModItems.ENDSTONE_CHESTPLATE)
+                .add(ModItems.ENDSTONE_LEGGINGS)
+                .add(ModItems.ENDSTONE_BOOTS);
     }
 
 }

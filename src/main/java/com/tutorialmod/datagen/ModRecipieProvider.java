@@ -9,7 +9,6 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -237,6 +236,91 @@ public class ModRecipieProvider extends FabricRecipeProvider {
                 .input('G', ModItems.PINK_GARNET)
                 .input('L', Items.REDSTONE_LAMP)
                 .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(recipeExporter);
+
+
+        //Vanilla Enhanced Recipes
+        List<ItemConvertible> ENDSTONE_SMELTABLES = List.of(
+                Items.END_STONE);
+
+        offerSmelting(recipeExporter, ENDSTONE_SMELTABLES, RecipeCategory.MISC, ModItems.ENDSTONE_BRICK, 0.15f, 400, "endstone");
+        offerBlasting(recipeExporter, ENDSTONE_SMELTABLES, RecipeCategory.MISC, ModItems.ENDSTONE_BRICK, 0.15f, 200, "endstone");
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ENDSTONE_SWORD)
+                .pattern(" B ")
+                .pattern(" B ")
+                .pattern(" S ")
+                .input('B', ModItems.ENDSTONE_BRICK)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ENDSTONE_BRICK), conditionsFromItem(ModItems.ENDSTONE_BRICK))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ENDSTONE_PICKAXE)
+                .pattern("BBB")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('B', ModItems.ENDSTONE_BRICK)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ENDSTONE_BRICK), conditionsFromItem(ModItems.ENDSTONE_BRICK))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ENDSTONE_AXE)
+                .pattern(" BB")
+                .pattern(" SB")
+                .pattern(" S ")
+                .input('B', ModItems.ENDSTONE_BRICK)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ENDSTONE_BRICK), conditionsFromItem(ModItems.ENDSTONE_BRICK))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ENDSTONE_SHOVEL)
+                .pattern(" B ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('B', ModItems.ENDSTONE_BRICK)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ENDSTONE_BRICK), conditionsFromItem(ModItems.ENDSTONE_BRICK))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ENDSTONE_HOE)
+                .pattern(" BB")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('B', ModItems.ENDSTONE_BRICK)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ENDSTONE_BRICK), conditionsFromItem(ModItems.ENDSTONE_BRICK))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ENDSTONE_HELMET)
+                .pattern("BBB")
+                .pattern("B B")
+                .pattern("   ")
+                .input('B', ModItems.ENDSTONE_BRICK)
+                .criterion(hasItem(ModItems.ENDSTONE_BRICK), conditionsFromItem(ModItems.ENDSTONE_BRICK))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ENDSTONE_CHESTPLATE)
+                .pattern("B B")
+                .pattern("BBB")
+                .pattern("BBB")
+                .input('B', ModItems.ENDSTONE_BRICK)
+                .criterion(hasItem(ModItems.ENDSTONE_BRICK), conditionsFromItem(ModItems.ENDSTONE_BRICK))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ENDSTONE_LEGGINGS)
+                .pattern("BBB")
+                .pattern("B B")
+                .pattern("B B")
+                .input('B', ModItems.ENDSTONE_BRICK)
+                .criterion(hasItem(ModItems.ENDSTONE_BRICK), conditionsFromItem(ModItems.ENDSTONE_BRICK))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ENDSTONE_BOOTS)
+                .pattern("   ")
+                .pattern("B B")
+                .pattern("B B")
+                .input('B', ModItems.ENDSTONE_BRICK)
+                .criterion(hasItem(ModItems.ENDSTONE_BRICK), conditionsFromItem(ModItems.ENDSTONE_BRICK))
                 .offerTo(recipeExporter);
 
     }

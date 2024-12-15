@@ -65,6 +65,21 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_BOOTS);
+
+
+        //Vanilla Enhanced Item Models
+        itemModelGenerator.register(ModItems.ENDSTONE_BRICK, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.ENDSTONE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENDSTONE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENDSTONE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENDSTONE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENDSTONE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ENDSTONE_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ENDSTONE_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ENDSTONE_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ENDSTONE_BOOTS);
     }
 
 }

@@ -2,10 +2,7 @@
   "item.tutorialmod.pink_garnet": "Pink Garnet",
   "item.tutorialmod.raw_pink_garnet": "Raw Pink Garnet",
   "item.tutorialmod.chisel": "Chisel",
-
   "item.tutorialmod.cauliflower": "Cauliflower",
-  "tooltip.tutorialmod.cauliflower.tooltip": "Tasty",
-
   "item.tutorialmod.starlight_ashes": "Starlight Ashes",
 
   "item.tutorialmod.pink_garnet_sword": "Pink Garnet Sword",
@@ -39,7 +36,28 @@
   "tooltip.tutorialmod.magic_block.tooltip": "This block emits some §bmagical§r properties",
   "tooltip.tutorialmod.chisel.shift_down": "This chisel can change some blocks into brick versions",
   "tooltip.tutorialmod.chisel": "Press §eShift§r for some more information",
+  "tooltip.tutorialmod.cauliflower.tooltip": "Tasty",
 
   "itemgroup.tutorialmod.pink_garnet_items": "Pink Garnet Items",
-  "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks"
+  "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks",
+
+
+  "itemgroup.tutorialmod.vanilla_enhanced_items": "Vanilla Enhanced Items",
+  "itemgroup.tutorialmod.vanilla_enhanced_blocks": "Vanilla Enhanced Blocks",
+
+
+  "item.tutorialmod.endstone_brick": "Endstone Brick",
+
+  "item.tutorialmod.endstone_sword": "Endstone Sword",
+  "item.tutorialmod.endstone_pickaxe": "Endstone Pickaxe",
+  "item.tutorialmod.endstone_axe": "Endstone Axe",
+  "item.tutorialmod.endstone_shovel": "Endstone Shovel",
+  "item.tutorialmod.endstone_hoe": "Endstone Hoe",
+
+  "item.tutorialmod.endstone_helmet": "Endstone Helmet",
+  "item.tutorialmod.endstone_chestplate": "Endstone Chestplate",
+  "item.tutorialmod.endstone_leggings": "Endstone Leggings",
+  "item.tutorialmod.endstone_boots": "Endstone Boots"
+
+
 }
