@@ -2,6 +2,7 @@ package com.tutorialmod.item;
 
 import com.tutorialmod.TutorialMod;
 import com.tutorialmod.item.custom.ChiselItem;
+import com.tutorialmod.item.custom.HammerAndChiselItem;
 import com.tutorialmod.item.custom.HammerItem;
 import com.tutorialmod.item.custom.ModArmorItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -79,6 +80,10 @@ public class ModItems { //Class needed to register new items, must be in item fo
 
     //Vanilla Enhanced Items
     public static final Item ENDSTONE_BRICK = registerItem("endstone_brick", new Item(new Item.Settings()));
+    public static final Item IRON_HAMMER_AND_CHISEL = registerItem("iron_hammer_and_chisel", new HammerAndChiselItem(new Item.Settings().maxDamage(16)));
+    public static final Item GOLD_HAMMER_AND_CHISEL = registerItem("gold_hammer_and_chisel", new HammerAndChiselItem(new Item.Settings().maxDamage(32)));
+    public static final Item DIAMOND_HAMMER_AND_CHISEL = registerItem("diamond_hammer_and_chisel", new HammerAndChiselItem(new Item.Settings().maxDamage(64)));
+    public static final Item NETHERITE_HAMMER_AND_CHISEL = registerItem("netherite_hammer_and_chisel", new HammerAndChiselItem(new Item.Settings().maxDamage(100)));
 
 
     //Vanilla Expanded Tools

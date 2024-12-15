@@ -246,6 +246,35 @@ public class ModRecipieProvider extends FabricRecipeProvider {
         offerSmelting(recipeExporter, ENDSTONE_SMELTABLES, RecipeCategory.MISC, ModItems.ENDSTONE_BRICK, 0.15f, 400, "endstone");
         offerBlasting(recipeExporter, ENDSTONE_SMELTABLES, RecipeCategory.MISC, ModItems.ENDSTONE_BRICK, 0.15f, 200, "endstone");
 
+        offerNetheriteUpgradeRecipe(recipeExporter, ModItems.DIAMOND_HAMMER_AND_CHISEL, RecipeCategory.TOOLS, ModItems.NETHERITE_HAMMER_AND_CHISEL);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.IRON_HAMMER_AND_CHISEL)
+                .pattern("   ")
+                .pattern(" I ")
+                .pattern(" S ")
+                .input('I', Items.IRON_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.GOLD_HAMMER_AND_CHISEL)
+                .pattern("   ")
+                .pattern(" G ")
+                .pattern(" S ")
+                .input('G', Items.GOLD_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DIAMOND_HAMMER_AND_CHISEL)
+                .pattern("   ")
+                .pattern(" D ")
+                .pattern(" S ")
+                .input('D', Items.DIAMOND)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                .offerTo(recipeExporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ENDSTONE_SWORD)
                 .pattern(" B ")
                 .pattern(" B ")

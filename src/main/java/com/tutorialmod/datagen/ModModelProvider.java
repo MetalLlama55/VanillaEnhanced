@@ -69,6 +69,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         //Vanilla Enhanced Item Models
         itemModelGenerator.register(ModItems.ENDSTONE_BRICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IRON_HAMMER_AND_CHISEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GOLD_HAMMER_AND_CHISEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIAMOND_HAMMER_AND_CHISEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHERITE_HAMMER_AND_CHISEL, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.ENDSTONE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ENDSTONE_PICKAXE, Models.HANDHELD);

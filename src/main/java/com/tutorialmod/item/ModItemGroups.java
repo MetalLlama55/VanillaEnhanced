@@ -72,6 +72,10 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.tutorialmod.vanilla_enhanced_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.ENDSTONE_BRICK);
+                        entries.add(ModItems.IRON_HAMMER_AND_CHISEL);
+                        entries.add(ModItems.GOLD_HAMMER_AND_CHISEL);
+                        entries.add(ModItems.DIAMOND_HAMMER_AND_CHISEL);
+                        entries.add(ModItems.NETHERITE_HAMMER_AND_CHISEL);
 
                         entries.add(ModItems.ENDSTONE_HELMET);
                         entries.add(ModItems.ENDSTONE_CHESTPLATE);
