@@ -2,10 +2,7 @@
   "item.tutorialmod.pink_garnet": "Pink Garnet",
   "item.tutorialmod.raw_pink_garnet": "Raw Pink Garnet",
   "item.tutorialmod.chisel": "Chisel",
-
   "item.tutorialmod.cauliflower": "Cauliflower",
-  "tooltip.tutorialmod.cauliflower.tooltip": "Tasty",
-
   "item.tutorialmod.starlight_ashes": "Starlight Ashes",
 
   "item.tutorialmod.pink_garnet_sword": "Pink Garnet Sword",
@@ -13,6 +10,12 @@
   "item.tutorialmod.pink_garnet_pickaxe": "Pink Garnet Pickaxe",
   "item.tutorialmod.pink_garnet_shovel": "Pink Garnet Shovel",
   "item.tutorialmod.pink_garnet_hoe": "Pink Garnet Hoe",
+  "item.tutorialmod.pink_garnet_hammer": "Pink Garnet Hammer",
+
+  "item.tutorialmod.pink_garnet_helmet": "Pink Garnet Helmet",
+  "item.tutorialmod.pink_garnet_chestplate": "Pink Garnet Chestplate",
+  "item.tutorialmod.pink_garnet_leggings": "Pink Garnet Leggings",
+  "item.tutorialmod.pink_garnet_boots": "Pink Garnet Boots",
 
   "block.tutorialmod.pink_garnet_block": "Pink Garnet Block",
   "block.tutorialmod.raw_pink_garnet_block": "Raw Pink Garnet Block",
@@ -33,7 +36,35 @@
   "tooltip.tutorialmod.magic_block.tooltip": "This block emits some §bmagical§r properties",
   "tooltip.tutorialmod.chisel.shift_down": "This chisel can change some blocks into brick versions",
   "tooltip.tutorialmod.chisel": "Press §eShift§r for some more information",
+  "tooltip.tutorialmod.cauliflower.tooltip": "Tasty",
 
   "itemgroup.tutorialmod.pink_garnet_items": "Pink Garnet Items",
-  "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks"
+  "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks",
+
+
+  "itemgroup.tutorialmod.vanilla_enhanced_items": "Vanilla Enhanced Items",
+  "itemgroup.tutorialmod.vanilla_enhanced_blocks": "Vanilla Enhanced Blocks",
+
+  "tooltip.tutorialmod.hammer_and_chisel.shift_down": "Converts §2blocks§r into their slab variant",
+  "tooltip.tutorialmod.hammer_and_chisel": "Press §eShift§r for more information",
+
+
+  "item.tutorialmod.endstone_brick": "End Stone Brick",
+  "item.tutorialmod.iron_hammer_and_chisel": "§7Iron Hammer and Chisel§r",
+  "item.tutorialmod.gold_hammer_and_chisel": "§eGold Hammer and Chisel§r",
+  "item.tutorialmod.diamond_hammer_and_chisel": "§3Diamond Hammer and Chisel§r",
+  "item.tutorialmod.netherite_hammer_and_chisel": "§8Netherite Hammer and Chisel§r",
+
+  "item.tutorialmod.endstone_sword": "Endstone Sword",
+  "item.tutorialmod.endstone_pickaxe": "Endstone Pickaxe",
+  "item.tutorialmod.endstone_axe": "Endstone Axe",
+  "item.tutorialmod.endstone_shovel": "Endstone Shovel",
+  "item.tutorialmod.endstone_hoe": "Endstone Hoe",
+
+  "item.tutorialmod.endstone_helmet": "Endstone Helmet",
+  "item.tutorialmod.endstone_chestplate": "Endstone Chestplate",
+  "item.tutorialmod.endstone_leggings": "Endstone Leggings",
+  "item.tutorialmod.endstone_boots": "Endstone Boots"
+
+
 }

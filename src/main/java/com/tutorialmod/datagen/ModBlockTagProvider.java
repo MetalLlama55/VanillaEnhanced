@@ -37,6 +37,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL)
                 .add(ModBlocks.MAGIC_BLOCK)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+
+        //Vanilla Enhanced Tags
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_ENDSTONE_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
     }
 
 }
