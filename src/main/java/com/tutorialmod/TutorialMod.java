@@ -5,6 +5,7 @@ import com.tutorialmod.component.ModDataComponentTypes;
 import com.tutorialmod.item.ModItemGroups;
 import com.tutorialmod.item.ModItems;
 import com.tutorialmod.util.HammerUsageEvent;
+import com.tutorialmod.util.ModifyExistingLootTables;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
@@ -41,6 +42,9 @@ public class TutorialMod implements ModInitializer {
 
 		//Registers hammer usage
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
+
+		//Modifies loot tables
+		ModifyExistingLootTables.modifyLootTables();
 
 		//Adds the ore spawns on world creation and startup
 		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, PINK_GARNET_ORE_PLACED_KEY);
