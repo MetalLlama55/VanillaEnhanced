@@ -20,9 +20,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
-                .add(Items.GOLD_INGOT)
-                .add(Items.DIAMOND)
-                .add(Items.NETHERITE_INGOT);
+                ;
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.PINK_GARNET_SWORD);

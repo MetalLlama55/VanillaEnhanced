@@ -33,7 +33,7 @@
   "block.tutorialmod.pink_garnet_lamp": "Pink Garnet Lamp",
   "block.tutorialmod.magic_block": "Magic Block",
 
-  "tooltip.tutorialmod.magic_block.tooltip": "This block emits some §bmagical§r properties",
+  "tooltip.tutorialmod.magic_block.tooltip": "This block emits some §bmagical§r properties (Not Yet Implemented)",
   "tooltip.tutorialmod.chisel.shift_down": "This chisel can change some blocks into brick versions",
   "tooltip.tutorialmod.chisel": "Press §eShift§r for some more information",
   "tooltip.tutorialmod.cauliflower.tooltip": "Tasty",
