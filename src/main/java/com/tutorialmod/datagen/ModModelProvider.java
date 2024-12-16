@@ -41,6 +41,10 @@ public class ModModelProvider extends FabricModelProvider {
         Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.PINK_GARNET_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.PINK_GARNET_LAMP)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
+
+
+        //Vanilla Enhanced Blocks
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CUT_CACTUS_BLOCK);
     }
 
     @Override
@@ -73,6 +77,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GOLD_HAMMER_AND_CHISEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIAMOND_HAMMER_AND_CHISEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.NETHERITE_HAMMER_AND_CHISEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.KNIFE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CACTUS_FRUIT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COOKED_CACTUS_FRUIT, Models.GENERATED);
+
 
         itemModelGenerator.register(ModItems.ENDSTONE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ENDSTONE_PICKAXE, Models.HANDHELD);

@@ -60,10 +60,10 @@ public class ModItemGroups {
                     .build());
 
     public static final ItemGroup VANILLA_ENHANCED_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(TutorialMod.MOD_ID, "vanilla_enhanced_blocks"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(Items.END_STONE_BRICKS)) //Placeholder TODO replace with another item
+            FabricItemGroup.builder().icon(() -> new ItemStack(Items.END_STONE_BRICKS))
                     .displayName(Text.translatable("itemgroup.tutorialmod.vanilla_enhanced_blocks"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModBlocks.MAGIC_BLOCK); //TODO replace
+                        entries.add(ModBlocks.CUT_CACTUS_BLOCK);
                     })
                     .build());
 
@@ -76,6 +76,9 @@ public class ModItemGroups {
                         entries.add(ModItems.GOLD_HAMMER_AND_CHISEL);
                         entries.add(ModItems.DIAMOND_HAMMER_AND_CHISEL);
                         entries.add(ModItems.NETHERITE_HAMMER_AND_CHISEL);
+                        entries.add(ModItems.KNIFE);
+                        entries.add(ModItems.CACTUS_FRUIT);
+                        entries.add(ModItems.COOKED_CACTUS_FRUIT);
 
                         entries.add(ModItems.ENDSTONE_HELMET);
                         entries.add(ModItems.ENDSTONE_CHESTPLATE);

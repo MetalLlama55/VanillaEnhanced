@@ -47,13 +47,19 @@
 
   "tooltip.tutorialmod.hammer_and_chisel.shift_down": "Converts §2blocks§r into their slab variant",
   "tooltip.tutorialmod.hammer_and_chisel": "Press §eShift§r for more information",
+  "tooltip.tutorialmod.knife.shift_down": "Cuts some blocks into edible versions",
+  "tooltip.tutorialmod.knife": "Press §eShift§r for more information",
 
+  "block.tutorialmod.cut_cactus_block": "Cut Cactus",
 
   "item.tutorialmod.endstone_brick": "End Stone Brick",
   "item.tutorialmod.iron_hammer_and_chisel": "§7Iron Hammer and Chisel§r",
   "item.tutorialmod.gold_hammer_and_chisel": "§eGold Hammer and Chisel§r",
   "item.tutorialmod.diamond_hammer_and_chisel": "§3Diamond Hammer and Chisel§r",
   "item.tutorialmod.netherite_hammer_and_chisel": "§8Netherite Hammer and Chisel§r",
+  "item.tutorialmod.knife": "Knife",
+  "item.tutorialmod.cactus_fruit": "Cactus Fruit",
+  "item.tutorialmod.cooked_cactus_fruit": "Cooked Cactus Fruit",
 
   "item.tutorialmod.endstone_sword": "Endstone Sword",
   "item.tutorialmod.endstone_pickaxe": "Endstone Pickaxe",

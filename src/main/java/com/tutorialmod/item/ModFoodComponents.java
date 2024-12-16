@@ -14,4 +14,14 @@ public class ModFoodComponents {
             .alwaysEdible()
             .build();
 
+    public static final FoodComponent CACTUS_FRUIT = new FoodComponent.Builder()
+            .nutrition(2)
+            .saturationModifier(0.5f)
+            .build();
+
+    public static final FoodComponent COOKED_CACTUS_FRUIT = new FoodComponent.Builder()
+            .nutrition(5)
+            .saturationModifier(1.0f)
+            .build();
+
 }
