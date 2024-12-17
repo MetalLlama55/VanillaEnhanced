@@ -1,12 +1,12 @@
 {
   "values": [
-    "tutorialmod:pink_garnet_helmet",
-    "tutorialmod:pink_garnet_chestplate",
-    "tutorialmod:pink_garnet_leggings",
-    "tutorialmod:pink_garnet_boots",
-    "tutorialmod:endstone_helmet",
-    "tutorialmod:endstone_chestplate",
-    "tutorialmod:endstone_leggings",
-    "tutorialmod:endstone_boots"
+    "vanillaenhanced:pink_garnet_helmet",
+    "vanillaenhanced:pink_garnet_chestplate",
+    "vanillaenhanced:pink_garnet_leggings",
+    "vanillaenhanced:pink_garnet_boots",
+    "vanillaenhanced:endstone_helmet",
+    "vanillaenhanced:endstone_chestplate",
+    "vanillaenhanced:endstone_leggings",
+    "vanillaenhanced:endstone_boots"
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "   ",
+    " I ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanillaenhanced:iron_hammer_and_chisel"
+  }
+}

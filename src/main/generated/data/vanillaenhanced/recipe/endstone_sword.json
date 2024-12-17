@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "vanillaenhanced:endstone_brick"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " B ",
+    " B ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanillaenhanced:endstone_sword"
+  }
+}

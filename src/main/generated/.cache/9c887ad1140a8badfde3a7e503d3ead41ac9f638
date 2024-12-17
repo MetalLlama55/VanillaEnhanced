@@ -1,0 +1,9 @@
+// 1.21	2024-12-17T13:22:21.0033094	Vanilla Enhanced Mod/Tags for minecraft:block
+d5de77cbd8326d1e0ff5652bae9b1cf82d0f9f70 data\minecraft\tags\block\mineable\pickaxe.json
+215343f4e230ab1e5fe2ffd7fe5e0f9a6db86ddb data\minecraft\tags\block\walls.json
+32b13946c4cd1f944b029659ccce5fcb2adad4ff data\vanillaenhanced\tags\block\needs_endstone_tool.json
+69c66ba2a245627c1d2eb30438db1869ebd03d5e data\minecraft\tags\block\needs_iron_tool.json
+27a6b517a95037ba2f23fac183f1d10fe85a518e data\vanillaenhanced\tags\block\needs_pink_garnet_tool.json
+feafa4def7dfecd1d8af3589514e1374bc788948 data\minecraft\tags\block\fence_gates.json
+e3fb02c037453414ad0e42a2ed47d09b9508b1d8 data\minecraft\tags\block\fences.json
+976b5383f789f7624a55751a1773960b8d079dce data\minecraft\tags\block\needs_diamond_tool.json

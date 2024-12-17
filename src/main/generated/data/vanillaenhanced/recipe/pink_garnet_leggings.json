@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": {
+      "item": "vanillaenhanced:pink_garnet"
+    },
+    "I": {
+      "item": "minecraft:iron_leggings"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "GIG",
+    "G G"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanillaenhanced:pink_garnet_leggings"
+  }
+}

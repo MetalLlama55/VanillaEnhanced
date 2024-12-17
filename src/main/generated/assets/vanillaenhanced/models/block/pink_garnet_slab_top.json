@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "vanillaenhanced:block/pink_garnet_block",
+    "side": "vanillaenhanced:block/pink_garnet_block",
+    "top": "vanillaenhanced:block/pink_garnet_block"
+  }
+}
