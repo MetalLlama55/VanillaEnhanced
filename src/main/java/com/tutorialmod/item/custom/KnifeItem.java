@@ -21,15 +21,14 @@ import net.minecraft.world.World;
 import java.util.List;
 import java.util.Map;
 
-public class ChiselItem extends Item {
+public class KnifeItem extends Item {
 
     // First param is original block, Second param is block it becomes
-    private static final Map<Block, Block> CHISEL_MAP = Map.of(
-            Blocks.STONE, Blocks.STONE_BRICKS,
-            Blocks.END_STONE, Blocks.END_STONE_BRICKS
+    private static final Map<Block, Block> KNIFE_MAP = Map.of(
+            Blocks.CACTUS, ModBlocks.CUT_CACTUS_BLOCK
     );
 
-    public ChiselItem(Settings settings) {
+    public KnifeItem(Settings settings) {
         super(settings);
     }
 
@@ -39,11 +38,11 @@ public class ChiselItem extends Item {
         Block clickedBlock = world.getBlockState(context.getBlockPos()).getBlock(); //Gets the block that was clicked with its world position
 
         //if the Map contains the block which was clicked
-        if (CHISEL_MAP.containsKey(clickedBlock)) {
+        if (KNIFE_MAP.containsKey(clickedBlock)) {
             //If the world is the server and not the client
             if (!world.isClient()) {
                 //Set the block state based on the block position and Map
-                world.setBlockState(context.getBlockPos(), CHISEL_MAP.get(clickedBlock).getDefaultState());
+                world.setBlockState(context.getBlockPos(), KNIFE_MAP.get(clickedBlock).getDefaultState());
 
                 //Damage the item by 1 durability on the server side updating the durability by 1 on use in the mainhand
                 context.getStack().damage(1, ((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
@@ -62,12 +61,9 @@ public class ChiselItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("tooltip.tutorialmod.chisel.shift_down"));
+            tooltip.add(Text.translatable("tooltip.tutorialmod.knife.shift_down"));
         } else{
-            tooltip.add(Text.translatable("tooltip.tutorialmod.chisel"));
-        }
-        if (stack.get(ModDataComponentTypes.COORDINATES) != null) {
-            tooltip.add(Text.literal("Last Block Changed at " + stack.get(ModDataComponentTypes.COORDINATES)));
+            tooltip.add(Text.translatable("tooltip.tutorialmod.knife"));
         }
 
         super.appendTooltip(stack, context, tooltip, type);

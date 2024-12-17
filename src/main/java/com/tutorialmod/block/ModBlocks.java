@@ -157,6 +157,17 @@ public class ModBlocks {
     );
 
 
+    //Vanilla Enhanced Blocks
+    public static final Block CUT_CACTUS_BLOCK = registerBlock(
+            "cut_cactus_block",
+            new Block(
+                    AbstractBlock.Settings.create()
+                            .strength(1f) // Strength o block
+                            .sounds(BlockSoundGroup.MOSS_CARPET) // What sound it will play
+            )
+    );
+
+
     //Registers the block
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

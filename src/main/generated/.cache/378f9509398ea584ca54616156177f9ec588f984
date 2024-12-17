@@ -1,7 +1,8 @@
-// 1.21	2024-12-15T14:03:39.638975	Tutorial Mod/Block Loot Tables
+// 1.21	2024-12-16T01:08:42.1211328	Tutorial Mod/Block Loot Tables
 20c1b94f16da89972e44952293dc87c35d46d12c data\tutorialmod\loot_table\blocks\pink_garnet_block.json
 64c3df15b6e946537414a0cc30f320d8b8019264 data\tutorialmod\loot_table\blocks\pink_garnet_stairs.json
 e324243da1cda477b8f75c1cf06f408d17143f95 data\tutorialmod\loot_table\blocks\pink_garnet_wall.json
+e2ad345eae6aba341dba7ba921414c88a31195ed data\tutorialmod\loot_table\blocks\cut_cactus_block.json
 7054b5fe4d92596689e3a5730e2610fc7859acc8 data\tutorialmod\loot_table\blocks\pink_garnet_deepslate_ore.json
 c524d99e89d1a6b91131c503e69d1343642df802 data\tutorialmod\loot_table\blocks\raw_pink_garnet_block.json
 1382e8045641fe6784d8535d113c80a6028a5ace data\tutorialmod\loot_table\blocks\pink_garnet_pressure_plate.json

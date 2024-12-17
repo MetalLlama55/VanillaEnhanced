@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "ingredient": {
+    "item": "tutorialmod:cactus_fruit"
+  },
+  "result": {
+    "id": "tutorialmod:cooked_cactus_fruit"
+  }
+}

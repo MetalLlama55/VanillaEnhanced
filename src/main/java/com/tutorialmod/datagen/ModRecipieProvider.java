@@ -9,6 +9,8 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.SmokingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -242,11 +244,24 @@ public class ModRecipieProvider extends FabricRecipeProvider {
         //Vanilla Enhanced Recipes
         List<ItemConvertible> ENDSTONE_SMELTABLES = List.of(
                 Items.END_STONE);
+        List<ItemConvertible> CACTUS_SMELTABLES = List.of(
+                ModItems.CACTUS_FRUIT);
+
 
         offerSmelting(recipeExporter, ENDSTONE_SMELTABLES, RecipeCategory.MISC, ModItems.ENDSTONE_BRICK, 0.15f, 400, "endstone");
+        offerSmelting(recipeExporter, CACTUS_SMELTABLES, RecipeCategory.MISC, ModItems.COOKED_CACTUS_FRUIT, 0.25f, 200, "cactus");
         offerBlasting(recipeExporter, ENDSTONE_SMELTABLES, RecipeCategory.MISC, ModItems.ENDSTONE_BRICK, 0.15f, 200, "endstone");
 
         offerNetheriteUpgradeRecipe(recipeExporter, ModItems.DIAMOND_HAMMER_AND_CHISEL, RecipeCategory.TOOLS, ModItems.NETHERITE_HAMMER_AND_CHISEL);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.KNIFE)
+                .pattern(" I ")
+                .pattern(" SI")
+                .pattern(" S ")
+                .input('I', Items.IRON_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.IRON_HAMMER_AND_CHISEL)
                 .pattern("   ")

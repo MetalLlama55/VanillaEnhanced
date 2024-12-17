@@ -1,10 +1,7 @@
 package com.tutorialmod.item;
 
 import com.tutorialmod.TutorialMod;
-import com.tutorialmod.item.custom.ChiselItem;
-import com.tutorialmod.item.custom.HammerAndChiselItem;
-import com.tutorialmod.item.custom.HammerItem;
-import com.tutorialmod.item.custom.ModArmorItem;
+import com.tutorialmod.item.custom.*;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -84,7 +81,9 @@ public class ModItems { //Class needed to register new items, must be in item fo
     public static final Item GOLD_HAMMER_AND_CHISEL = registerItem("gold_hammer_and_chisel", new HammerAndChiselItem(new Item.Settings().maxDamage(32)));
     public static final Item DIAMOND_HAMMER_AND_CHISEL = registerItem("diamond_hammer_and_chisel", new HammerAndChiselItem(new Item.Settings().maxDamage(64)));
     public static final Item NETHERITE_HAMMER_AND_CHISEL = registerItem("netherite_hammer_and_chisel", new HammerAndChiselItem(new Item.Settings().maxDamage(100)));
-
+    public static final Item KNIFE = registerItem("knife", new KnifeItem(new Item.Settings().maxDamage(32)));
+    public static final Item CACTUS_FRUIT = registerItem("cactus_fruit", new Item(new Item.Settings().food(ModFoodComponents.CACTUS_FRUIT)));
+    public static final Item COOKED_CACTUS_FRUIT = registerItem("cooked_cactus_fruit", new Item(new Item.Settings().food(ModFoodComponents.COOKED_CACTUS_FRUIT)));
 
     //Vanilla Expanded Tools
     public static final Item ENDSTONE_SWORD = registerItem(

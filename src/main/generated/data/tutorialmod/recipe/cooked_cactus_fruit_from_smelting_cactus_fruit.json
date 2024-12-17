@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "cactus",
+  "ingredient": {
+    "item": "tutorialmod:cactus_fruit"
+  },
+  "result": {
+    "id": "tutorialmod:cooked_cactus_fruit"
+  }
+}
