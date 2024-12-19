@@ -24,4 +24,10 @@ public class ModFoodComponents {
             .saturationModifier(1.0f)
             .build();
 
+    public static final FoodComponent HONEY_BERRY = new FoodComponent.Builder()
+            .nutrition(1)
+            .saturationModifier(0.15f)
+            .snack()
+            .build();
+
 }

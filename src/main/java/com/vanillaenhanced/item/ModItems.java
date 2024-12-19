@@ -1,6 +1,7 @@
 package com.vanillaenhanced.item;
 
 import com.vanillaenhanced.VanillaEnhancedMod;
+import com.vanillaenhanced.block.ModBlocks;
 import com.vanillaenhanced.item.custom.*;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -74,6 +75,10 @@ public class ModItems { //Class needed to register new items, must be in item fo
             "pink_garnet_boots",
             new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+    public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds", new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
+    public static final Item HONEY_BERRIES = registerItem("honey_berries", new AliasedBlockItem(ModBlocks.HONEY_BERRY_BUSH, new Item.Settings().food(ModFoodComponents.HONEY_BERRY)));
+
+
 
     //Vanilla Enhanced Items
     public static final Item ENDSTONE_BRICK = registerItem("endstone_brick", new Item(new Item.Settings()));
@@ -84,6 +89,7 @@ public class ModItems { //Class needed to register new items, must be in item fo
     public static final Item KNIFE = registerItem("knife", new KnifeItem(new Item.Settings().maxDamage(32)));
     public static final Item CACTUS_FRUIT = registerItem("cactus_fruit", new Item(new Item.Settings().food(ModFoodComponents.CACTUS_FRUIT)));
     public static final Item COOKED_CACTUS_FRUIT = registerItem("cooked_cactus_fruit", new Item(new Item.Settings().food(ModFoodComponents.COOKED_CACTUS_FRUIT)));
+
 
     //Vanilla Expanded Tools
     public static final Item ENDSTONE_SWORD = registerItem(

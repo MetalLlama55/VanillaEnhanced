@@ -1,5 +1,6 @@
 package com.vanillaenhanced.datagen;
 
+import com.vanillaenhanced.block.ModBlocks;
 import com.vanillaenhanced.item.ModItems;
 import com.vanillaenhanced.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -31,6 +32,22 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.PINK_GARNET_HOE);
 
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.PINK_GARNET_HELMET)
+                .add(ModItems.PINK_GARNET_CHESTPLATE)
+                .add(ModItems.PINK_GARNET_LEGGINGS)
+                .add(ModItems.PINK_GARNET_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DRIFTWOOD_LOG.asItem())
+                .add(ModBlocks.DRIFTWOOD_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_DRIFTWOOD_LOG.asItem())
+                .add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD.asItem());
+
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.DRIFTWOOD_PLANKS.asItem());
+
+
         //Vanilla Enhanced Tags
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.ENDSTONE_SWORD);
@@ -45,11 +62,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
 
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
-                .add(ModItems.PINK_GARNET_HELMET)
-                .add(ModItems.PINK_GARNET_CHESTPLATE)
-                .add(ModItems.PINK_GARNET_LEGGINGS)
-                .add(ModItems.PINK_GARNET_BOOTS)
-
                 .add(ModItems.ENDSTONE_HELMET)
                 .add(ModItems.ENDSTONE_CHESTPLATE)
                 .add(ModItems.ENDSTONE_LEGGINGS)

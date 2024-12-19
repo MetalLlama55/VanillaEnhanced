@@ -1,9 +1,9 @@
 {
-  "feature": "vanillaenhanced:small_pink_garnet_ore",
+  "feature": "vanillaenhanced:end_pink_garnet_ore",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 6
+      "count": 10
     },
     {
       "type": "minecraft:in_square"
@@ -11,12 +11,12 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "type": "minecraft:trapezoid",
+        "type": "minecraft:uniform",
         "max_inclusive": {
-          "above_bottom": 80
+          "absolute": 80
         },
         "min_inclusive": {
-          "above_bottom": -80
+          "absolute": -80
         }
       }
     },

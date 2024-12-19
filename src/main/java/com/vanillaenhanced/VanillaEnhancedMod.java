@@ -6,27 +6,21 @@ import com.vanillaenhanced.item.ModItemGroups;
 import com.vanillaenhanced.item.ModItems;
 import com.vanillaenhanced.util.HammerUsageEvent;
 import com.vanillaenhanced.util.ModifyExistingLootTables;
+import com.vanillaenhanced.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
-import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.GenerationStep;
-import net.minecraft.world.gen.feature.PlacedFeature;
+
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class VanillaEnhancedMod implements ModInitializer {
 	public static final String MOD_ID = "vanillaenhanced";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-
-	public static final RegistryKey<PlacedFeature> PINK_GARNET_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(MOD_ID, "pink_garnet_ore"));
-	public static final RegistryKey<PlacedFeature> MEDIUM_PINK_GARNET_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(MOD_ID, "medium_pink_garnet_ore"));
-	public static final RegistryKey<PlacedFeature> LARGE_PINK_GARNET_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(MOD_ID, "large_pink_garnet_ore"));
 
 	@Override
 	public void onInitialize() {
@@ -37,18 +31,31 @@ public class VanillaEnhancedMod implements ModInitializer {
 
 		ModDataComponentTypes.registerDataComponentTypes();
 
+		//Modifies loot tables
+		ModifyExistingLootTables.modifyLootTables();
+
+		ModWorldGeneration.generateModWorldGen();
+
 		//Registers Fuel
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
 
 		//Registers hammer usage
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 
-		//Modifies loot tables
-		ModifyExistingLootTables.modifyLootTables();
+		CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOWER, 0.5f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOWER_SEEDS, 0.25f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.HONEY_BERRIES, 0.15f);
+		CompostingChanceRegistry.INSTANCE.add(ModBlocks.DRIFTWOOD_SAPLING, 0.15f);
 
-		//Adds the ore spawns on world creation and startup
-		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, PINK_GARNET_ORE_PLACED_KEY);
-		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, MEDIUM_PINK_GARNET_ORE_PLACED_KEY);
-		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, LARGE_PINK_GARNET_ORE_PLACED_KEY);
+		StrippableBlockRegistry.register(ModBlocks.DRIFTWOOD_LOG, ModBlocks.STRIPPED_DRIFTWOOD_LOG);
+		StrippableBlockRegistry.register(ModBlocks.DRIFTWOOD_WOOD, ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
+
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_LOG, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_WOOD, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DRIFTWOOD_LOG, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD, 5, 5);
+
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_PLANKS, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_LEAVES, 30, 60);
 	}
 }

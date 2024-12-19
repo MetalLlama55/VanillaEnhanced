@@ -33,6 +33,8 @@ public class ModItemGroups {
                         entries.add(ModItems.PINK_GARNET_CHESTPLATE);
                         entries.add(ModItems.PINK_GARNET_LEGGINGS);
                         entries.add(ModItems.PINK_GARNET_BOOTS);
+                        entries.add(ModItems.CAULIFLOWER_SEEDS);
+                        entries.add(ModItems.HONEY_BERRIES);
                     })
                     .build());
 
@@ -56,6 +58,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PINK_GARNET_PRESSURE_PLATE);
                         entries.add(ModBlocks.PINK_GARNET_WALL);
                         entries.add(ModBlocks.PINK_GARNET_LAMP);
+
+                        entries.add(ModBlocks.DRIFTWOOD_LOG);
+                        entries.add(ModBlocks.DRIFTWOOD_WOOD);
+                        entries.add(ModBlocks.STRIPPED_DRIFTWOOD_LOG);
+                        entries.add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
+                        entries.add(ModBlocks.DRIFTWOOD_PLANKS);
+                        entries.add(ModBlocks.DRIFTWOOD_SAPLING);
                     })
                     .build());
 
@@ -64,6 +73,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.vanillaenhanced.vanilla_enhanced_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.CUT_CACTUS_BLOCK);
+
                     })
                     .build());
 

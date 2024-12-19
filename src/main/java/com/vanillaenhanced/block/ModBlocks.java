@@ -1,10 +1,12 @@
 package com.vanillaenhanced.block;
 
 import com.vanillaenhanced.VanillaEnhancedMod;
-import com.vanillaenhanced.block.custom.MagicBlock;
-import com.vanillaenhanced.block.custom.PinkGarnetLampBlock;
+import com.vanillaenhanced.block.custom.*;
+import com.vanillaenhanced.world.tree.ModSaplingGenerators;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -40,6 +42,26 @@ public class ModBlocks {
             "pink_garnet_ore",
             new ExperienceDroppingBlock(
                     UniformIntProvider.create(2,5),
+                    AbstractBlock.Settings.create()
+                            .strength(5f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.STONE)
+            )
+    );
+    public static final Block PINK_GARNET_NETHER_ORE = registerBlock(
+            "pink_garnet_nether_ore",
+            new ExperienceDroppingBlock(
+                    UniformIntProvider.create(1,5),
+                    AbstractBlock.Settings.create()
+                            .strength(5f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.STONE)
+            )
+    );
+    public static final Block PINK_GARNET_END_ORE = registerBlock(
+            "pink_garnet_end_ore",
+            new ExperienceDroppingBlock(
+                    UniformIntProvider.create(4,6),
                     AbstractBlock.Settings.create()
                             .strength(5f)
                             .requiresTool()
@@ -155,6 +177,73 @@ public class ModBlocks {
                             .luminance(state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0) //If clicked it emits brightness of 15 else 0
             )
     );
+    public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem(
+            "cauliflower_crop",
+            new CauliflowerCropBlock(AbstractBlock.Settings.create()
+                    .noCollision()
+                    .breakInstantly()
+                    .ticksRandomly()
+                    .sounds(BlockSoundGroup.CROP)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .mapColor(MapColor.DARK_GREEN)
+            ));
+    public static final Block HONEY_BERRY_BUSH = registerBlockWithoutBlockItem(
+            "honey_berry_bush",
+            new HoneyBerryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)
+            ));
+    public static final Block DRIFTWOOD_LOG = registerBlock(
+            "driftwood_log",
+            new PillarBlock(
+                    AbstractBlock.Settings.copy(Blocks.OAK_LOG)
+            )
+    );
+    public static final Block DRIFTWOOD_WOOD = registerBlock(
+            "driftwood_wood",
+            new PillarBlock(
+                    AbstractBlock.Settings.copy(Blocks.OAK_WOOD)
+            )
+    );
+    public static final Block STRIPPED_DRIFTWOOD_LOG = registerBlock(
+            "stripped_driftwood_log",
+            new PillarBlock(
+                    AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)
+            )
+    );
+    public static final Block STRIPPED_DRIFTWOOD_WOOD = registerBlock(
+            "stripped_driftwood_wood",
+            new PillarBlock(
+                    AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)
+            )
+    );
+    public static final Block DRIFTWOOD_PLANKS = registerBlock(
+            "driftwood_planks",
+            new Block(
+                    AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)
+            )
+    );
+    public static final Block DRIFTWOOD_LEAVES = registerBlock(
+            "driftwood_leaves",
+            new LeavesBlock(
+                    AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)
+            )
+    );
+    // If you want a block that is similar to an existing sapling
+    //public static final Block DRIFTWOOD_SAPLING = registerBlock(
+    //        "driftwood_sapling",
+    //        new SaplingBlock(
+    //                ModSaplingGenerators.DRIFTWOOD,
+    //                AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)
+    //        )
+    //);
+    public static final Block DRIFTWOOD_SAPLING = registerBlock(
+            "driftwood_sapling",
+            new ModSaplingBlock(
+                    ModSaplingGenerators.DRIFTWOOD,
+                    AbstractBlock.Settings.copy(Blocks.OAK_SAPLING),
+                    Blocks.SAND
+            )
+    );
+
 
 
     //Vanilla Enhanced Blocks
@@ -168,9 +257,17 @@ public class ModBlocks {
     );
 
 
+
+
+
     //Registers the block
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(VanillaEnhancedMod.MOD_ID, name), block);
+    }
+
+    //Registers block without a block item like crops
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(VanillaEnhancedMod.MOD_ID, name), block);
     }
 
