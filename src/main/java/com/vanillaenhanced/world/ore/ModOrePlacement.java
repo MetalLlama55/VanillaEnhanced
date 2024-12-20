@@ -1,4 +1,4 @@
-package com.vanillaenhanced.world;
+package com.vanillaenhanced.world.ore;
 
 import net.minecraft.world.gen.placementmodifier.*;
 

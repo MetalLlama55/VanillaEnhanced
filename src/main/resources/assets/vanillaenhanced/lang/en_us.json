@@ -43,6 +43,8 @@
   "block.vanillaenhanced.driftwood_planks": "Driftwood Planks",
   "block.vanillaenhanced.driftwood_sapling": "Driftwood Sapling",
 
+  "enchantment.vanillaenhanced.lightning_striker": "Lightning Striker",
+
   "tooltip.vanillaenhanced.magic_block.tooltip": "This block emits some §bmagical§r properties (Not Yet Implemented)",
   "tooltip.vanillaenhanced.chisel.shift_down": "This chisel can change some blocks into brick versions",
   "tooltip.vanillaenhanced.chisel": "Press §eShift§r for some more information",

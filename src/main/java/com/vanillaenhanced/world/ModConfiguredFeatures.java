@@ -70,6 +70,7 @@ public class ModConfiguredFeatures {
                 )
         );
 
+
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

@@ -1,6 +1,7 @@
 package com.vanillaenhanced;
 
 import com.vanillaenhanced.datagen.*;
+import com.vanillaenhanced.enchantment.ModEnchantments;
 import com.vanillaenhanced.world.ModConfiguredFeatures;
 import com.vanillaenhanced.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -24,6 +25,7 @@ public class VanillaEnhancedModDataGenerator implements DataGeneratorEntrypoint 
 
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {
+		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}

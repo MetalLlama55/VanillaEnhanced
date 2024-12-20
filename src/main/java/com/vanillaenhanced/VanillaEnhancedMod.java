@@ -2,6 +2,7 @@ package com.vanillaenhanced;
 
 import com.vanillaenhanced.block.ModBlocks;
 import com.vanillaenhanced.component.ModDataComponentTypes;
+import com.vanillaenhanced.enchantment.ModEnchantmentEffects;
 import com.vanillaenhanced.item.ModItemGroups;
 import com.vanillaenhanced.item.ModItems;
 import com.vanillaenhanced.util.HammerUsageEvent;
@@ -35,6 +36,7 @@ public class VanillaEnhancedMod implements ModInitializer {
 		ModifyExistingLootTables.modifyLootTables();
 
 		ModWorldGeneration.generateModWorldGen();
+		ModEnchantmentEffects.registerEnchantmentEffects();
 
 		//Registers Fuel
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);

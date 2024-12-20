@@ -2,6 +2,7 @@ package com.vanillaenhanced.world;
 
 import com.vanillaenhanced.VanillaEnhancedMod;
 import com.vanillaenhanced.block.ModBlocks;
+import com.vanillaenhanced.world.ore.ModOrePlacement;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;

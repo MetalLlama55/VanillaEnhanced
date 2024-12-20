@@ -1,4 +1,4 @@
-// 1.21	2024-12-18T20:19:58.2700569	Vanilla Enhanced Mod/Recipes
+// 1.21	2024-12-19T14:37:41.5681493	Vanilla Enhanced Mod/Recipes
 00093a2c3d57b9a88f308f92253b9e8d502d163b data\vanillaenhanced\recipe\pink_garnet_trapdoor.json
 6f7c4e1b4a6ffaded872e980979a7a214f831116 data\vanillaenhanced\recipe\pink_garnet_wall.json
 43975facaf20fcd709616c91a7fbeef0b688218d data\vanillaenhanced\advancement\recipes\building_blocks\pink_garnet_door.json
@@ -59,8 +59,8 @@ deb4a5904e9dfcd6485995abc416f9d5b1c0216a data\vanillaenhanced\advancement\recipe
 2535206108d7ca41f47a8e5c3e8785a28b59842b data\vanillaenhanced\advancement\recipes\tools\pink_garnet_hammer.json
 b95bd798937bbb579998974a240c6db1bb2e7e11 data\vanillaenhanced\advancement\recipes\combat\endstone_boots.json
 1efd8e70c6e486960ad6cc1c3179982873e1c909 data\vanillaenhanced\advancement\recipes\building_blocks\pink_garnet_stairs.json
-d9261c80b876997d1c2cd9d33abc1a344f126598 data\vanillaenhanced\advancement\recipes\tools\pink_garnet_leggings.json
 c079a5c855cf9f1c11d9a645ef88bb1e05e43e27 data\vanillaenhanced\advancement\recipes\building_blocks\pink_garnet_lamp.json
+d9261c80b876997d1c2cd9d33abc1a344f126598 data\vanillaenhanced\advancement\recipes\tools\pink_garnet_leggings.json
 bf5bacdab3b898bc7ebb85991a3021d9748d7f52 data\vanillaenhanced\advancement\recipes\tools\pink_garnet_axe.json
 be65582be4d3ddc40fb188b7fdf5f594f9a27959 data\vanillaenhanced\advancement\recipes\misc\cooked_cactus_fruit_from_smelting_cactus_fruit.json
 7cc95ef1115d7aaedca0883ddd291fdbec8046d4 data\vanillaenhanced\recipe\cooked_cactus_fruit_from_smelting_cactus_fruit.json
