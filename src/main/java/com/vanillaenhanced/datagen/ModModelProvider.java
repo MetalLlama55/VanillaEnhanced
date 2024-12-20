@@ -2,6 +2,7 @@ package com.vanillaenhanced.datagen;
 
 import com.vanillaenhanced.block.ModBlocks;
 import com.vanillaenhanced.block.custom.CauliflowerCropBlock;
+import com.vanillaenhanced.block.custom.CherryCropBlock;
 import com.vanillaenhanced.block.custom.HoneyBerryBushBlock;
 import com.vanillaenhanced.block.custom.PinkGarnetLampBlock;
 import com.vanillaenhanced.item.ModItems;
@@ -67,6 +68,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         //Vanilla Enhanced Blocks
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CUT_CACTUS_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHERRY_LEAVES_CROP);
+
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.CHERRY_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
     }
 
@@ -104,6 +108,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.KNIFE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CACTUS_FRUIT, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_CACTUS_FRUIT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHERRY, Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.CHERRY_SAPLING.asItem(), Models.GENERATED);
+        itemModelGenerator.register(ModItems.PRUNING_SHEARS, Models.GENERATED);
 
 
         itemModelGenerator.register(ModItems.ENDSTONE_SWORD, Models.HANDHELD);

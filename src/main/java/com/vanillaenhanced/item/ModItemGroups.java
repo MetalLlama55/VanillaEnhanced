@@ -35,6 +35,7 @@ public class ModItemGroups {
                         entries.add(ModItems.PINK_GARNET_BOOTS);
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
                         entries.add(ModItems.HONEY_BERRIES);
+                        entries.add(ModBlocks.DRIFTWOOD_SAPLING);
                     })
                     .build());
 
@@ -64,7 +65,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STRIPPED_DRIFTWOOD_LOG);
                         entries.add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
                         entries.add(ModBlocks.DRIFTWOOD_PLANKS);
-                        entries.add(ModBlocks.DRIFTWOOD_SAPLING);
                     })
                     .build());
 
@@ -73,6 +73,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.vanillaenhanced.vanilla_enhanced_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.CUT_CACTUS_BLOCK);
+                        entries.add(ModBlocks.CHERRY_LEAVES_CROP);
 
                     })
                     .build());
@@ -89,6 +90,9 @@ public class ModItemGroups {
                         entries.add(ModItems.KNIFE);
                         entries.add(ModItems.CACTUS_FRUIT);
                         entries.add(ModItems.COOKED_CACTUS_FRUIT);
+                        entries.add(ModBlocks.CHERRY_SAPLING);
+                        entries.add(ModItems.PRUNING_SHEARS);
+                        entries.add(ModItems.CHERRY);
 
                         entries.add(ModItems.ENDSTONE_HELMET);
                         entries.add(ModItems.ENDSTONE_CHESTPLATE);

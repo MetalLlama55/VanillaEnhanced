@@ -16,7 +16,9 @@ import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.foliage.FoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
@@ -27,6 +29,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> END_PINK_GARNET_ORE_KEY = registerKey("end_pink_garnet_ore");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> DRIFTWOOD_KEY = registerKey("driftwood");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CHERRY_KEY = registerKey("cherry");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> HONEY_BERRY_BUSH_KEY = registerKey("honey_berry_bush");
 
@@ -52,11 +55,21 @@ public class ModConfiguredFeatures {
         //Tree Gen
         register(context, DRIFTWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.DRIFTWOOD_LOG), //Which block will be the trunk
-                new StraightTrunkPlacer(5, 6, 3),       //How the trunk will be placed
+                new StraightTrunkPlacer(5, 1, 0),       //How the trunk will be placed
                 BlockStateProvider.of(ModBlocks.DRIFTWOOD_LEAVES), //Which block will be the leaves
-                new BlobFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), 3), //How the leaves will be placed
+                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3) {
+                }, //How the leaves will be placed
                 new TwoLayersFeatureSize(1, 0, 2)) //Bounds the feature so they don't touch on generation
                 .dirtProvider(BlockStateProvider.of(Blocks.SAND))
+                .build()
+        );
+        register(context, CHERRY_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(Blocks.OAK_LOG), //Which block will be the trunk
+                new StraightTrunkPlacer(5, 1, 0),       //How the trunk will be placed
+                BlockStateProvider.of(ModBlocks.CHERRY_LEAVES_CROP), //Which block will be the leaves
+                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3) {
+                }, //How the leaves will be placed
+                new TwoLayersFeatureSize(1, 0, 2)) //Bounds the feature so they don't touch on generation
                 .build()
         );
 

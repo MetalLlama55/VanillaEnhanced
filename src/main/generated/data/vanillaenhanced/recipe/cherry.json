@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vanillaenhanced:cherry_leaves_crop"
+    },
+    {
+      "item": "vanillaenhanced:pruning_shears"
+    }
+  ],
+  "result": {
+    "count": 5,
+    "id": "vanillaenhanced:cherry"
+  }
+}

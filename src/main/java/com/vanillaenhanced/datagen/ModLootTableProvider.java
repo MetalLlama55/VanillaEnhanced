@@ -2,6 +2,7 @@ package com.vanillaenhanced.datagen;
 
 import com.vanillaenhanced.block.ModBlocks;
 import com.vanillaenhanced.block.custom.CauliflowerCropBlock;
+import com.vanillaenhanced.block.custom.CherryCropBlock;
 import com.vanillaenhanced.block.custom.HoneyBerryBushBlock;
 import com.vanillaenhanced.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -98,6 +99,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         //Vanilla Enhanced Blocks
         addDrop(ModBlocks.CUT_CACTUS_BLOCK, multipleOreDrops(ModBlocks.CUT_CACTUS_BLOCK, ModItems.CACTUS_FRUIT, 1, 3));
+        addDrop(ModBlocks.CHERRY_LEAVES_CROP, leavesDrops(ModBlocks.CHERRY_LEAVES_CROP, ModBlocks.CHERRY_SAPLING, 0.0625f));
+
+
+        BlockStatePropertyLootCondition.Builder cherryBuilder = BlockStatePropertyLootCondition.builder(ModBlocks.CHERRY_LEAVES_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(CherryCropBlock.AGE, CherryCropBlock.MAX_AGE));
 
     }
 

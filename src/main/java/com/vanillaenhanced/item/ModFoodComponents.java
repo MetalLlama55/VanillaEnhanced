@@ -30,4 +30,10 @@ public class ModFoodComponents {
             .snack()
             .build();
 
+    public static final FoodComponent CHERRY = new FoodComponent.Builder()
+            .nutrition(1)
+            .saturationModifier(0.15f)
+            .snack()
+            .build();
+
 }

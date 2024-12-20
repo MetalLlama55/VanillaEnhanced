@@ -5,17 +5,11 @@ import com.vanillaenhanced.component.ModDataComponentTypes;
 import com.vanillaenhanced.enchantment.ModEnchantmentEffects;
 import com.vanillaenhanced.item.ModItemGroups;
 import com.vanillaenhanced.item.ModItems;
-import com.vanillaenhanced.util.HammerUsageEvent;
-import com.vanillaenhanced.util.ModifyExistingLootTables;
+import com.vanillaenhanced.util.*;
 import com.vanillaenhanced.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
-import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
-import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
-
-import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,32 +26,20 @@ public class VanillaEnhancedMod implements ModInitializer {
 
 		ModDataComponentTypes.registerDataComponentTypes();
 
-		//Modifies loot tables
-		ModifyExistingLootTables.modifyLootTables();
+		ModifyExistingLootTables.modifyLootTables(); //Modifies loot tables
 
 		ModWorldGeneration.generateModWorldGen();
+
 		ModEnchantmentEffects.registerEnchantmentEffects();
 
-		//Registers Fuel
-		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
+		CompostingRegistry.registerCompostingChance();
 
-		//Registers hammer usage
-		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
+		StrippableBlocksRegistry.registerStrippableBlock();
 
-		CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOWER, 0.5f);
-		CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOWER_SEEDS, 0.25f);
-		CompostingChanceRegistry.INSTANCE.add(ModItems.HONEY_BERRIES, 0.15f);
-		CompostingChanceRegistry.INSTANCE.add(ModBlocks.DRIFTWOOD_SAPLING, 0.15f);
+		FlammableBlocksRegistry.registerFlammableBlocks();
 
-		StrippableBlockRegistry.register(ModBlocks.DRIFTWOOD_LOG, ModBlocks.STRIPPED_DRIFTWOOD_LOG);
-		StrippableBlockRegistry.register(ModBlocks.DRIFTWOOD_WOOD, ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
+		FuelItemRegistry.registerFuel();
 
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_LOG, 5, 5);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_WOOD, 5, 5);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DRIFTWOOD_LOG, 5, 5);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD, 5, 5);
-
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_PLANKS, 5, 20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_LEAVES, 30, 60);
+		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent()); //Registers hammer usage
 	}
 }

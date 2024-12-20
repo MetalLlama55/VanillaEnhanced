@@ -1,4 +1,4 @@
-// 1.21	2024-12-19T14:37:41.5860994	Vanilla Enhanced Mod/Block Loot Tables
+// 1.21	2024-12-20T14:39:47.1948282	Vanilla Enhanced Mod/Block Loot Tables
 5112ae0adce13d0a41f7743b5c199daa3cfeeec2 data\vanillaenhanced\loot_table\blocks\stripped_driftwood_wood.json
 d9b030c0cdb9453168b308a7468fbbadb9d60be2 data\vanillaenhanced\loot_table\blocks\pink_garnet_wall.json
 eb3a031d9d628e8c8646ecf2658e0ac72d727981 data\vanillaenhanced\loot_table\blocks\pink_garnet_ore.json
@@ -8,9 +8,10 @@ eb3a031d9d628e8c8646ecf2658e0ac72d727981 data\vanillaenhanced\loot_table\blocks\
 08ec9e87400b46fbb537c23c76051ef80793e90a data\vanillaenhanced\loot_table\blocks\pink_garnet_door.json
 9633388868d235ed75d3fcd763eaea19f3d044fd data\vanillaenhanced\loot_table\blocks\pink_garnet_stairs.json
 e84b249187380249afbcc4b8093e0ac12a583bc3 data\vanillaenhanced\loot_table\blocks\pink_garnet_slab.json
-7aae81abe67e662aac9b242164fb76d16036a3fb data\vanillaenhanced\loot_table\blocks\driftwood_wood.json
 c2372d9e60375b0a5d66ee347ac70324cbe5cf60 data\vanillaenhanced\loot_table\blocks\pink_garnet_pressure_plate.json
+7aae81abe67e662aac9b242164fb76d16036a3fb data\vanillaenhanced\loot_table\blocks\driftwood_wood.json
 90d84187f19ea680fbb68d1a741b755f4bd23718 data\vanillaenhanced\loot_table\blocks\driftwood_planks.json
+7b3bdf18e3acf11244b037195f7c5850389be3d4 data\vanillaenhanced\loot_table\blocks\cherry_leaves_crop.json
 a3eab83d767655613b0ccd2bf304bb3bb2102dfb data\vanillaenhanced\loot_table\blocks\pink_garnet_deepslate_ore.json
 392e8b36375da0538846edeadce9f056a60985c5 data\vanillaenhanced\loot_table\blocks\pink_garnet_lamp.json
 240c825608e477fc74c82d635509b7239e05c1a5 data\vanillaenhanced\loot_table\blocks\driftwood_sapling.json

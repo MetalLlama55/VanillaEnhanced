@@ -20,6 +20,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> END_PINK_GARNET_ORE_PLACED_KEY = registerKey("end_pink_garnet_ore_placed");
 
     public static final RegistryKey<PlacedFeature> DRIFTWOOD_PLACED_KEY= registerKey("driftwood_placed");
+    public static final RegistryKey<PlacedFeature> CHERRY_PLACED_KEY= registerKey("cherry_placed");
 
     public static final RegistryKey<PlacedFeature> HONEY_BERRY_BUSH_PLACED_KEY = registerKey("honey_berry_bush_placed");
 
@@ -44,6 +45,11 @@ public class ModPlacedFeatures {
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(2, 0.1f, 2),
                         ModBlocks.DRIFTWOOD_SAPLING
+                ));
+        register(context, CHERRY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHERRY_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(2, 0.1f, 2),
+                        ModBlocks.CHERRY_SAPLING
                 ));
 
         //Bush Gen

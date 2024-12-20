@@ -2,6 +2,7 @@ package com.vanillaenhanced.item.custom;
 
 import com.vanillaenhanced.block.ModBlocks;
 import com.vanillaenhanced.component.ModDataComponentTypes;
+import com.vanillaenhanced.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;

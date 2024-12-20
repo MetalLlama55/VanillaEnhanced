@@ -252,10 +252,25 @@ public class ModRecipieProvider extends FabricRecipeProvider {
 
         offerNetheriteUpgradeRecipe(recipeExporter, ModItems.DIAMOND_HAMMER_AND_CHISEL, RecipeCategory.TOOLS, ModItems.NETHERITE_HAMMER_AND_CHISEL);
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CHERRY, 5)
+                .input(ModBlocks.CHERRY_LEAVES_CROP)
+                .input(ModItems.PRUNING_SHEARS)
+                .criterion(hasItem(ModItems.PRUNING_SHEARS), conditionsFromItem(ModItems.PRUNING_SHEARS))
+                .offerTo(recipeExporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.KNIFE)
                 .pattern(" I ")
                 .pattern(" SI")
                 .pattern(" S ")
+                .input('I', Items.IRON_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PRUNING_SHEARS)
+                .pattern("I I")
+                .pattern(" S ")
+                .pattern("S S")
                 .input('I', Items.IRON_INGOT)
                 .input('S', Items.STICK)
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))

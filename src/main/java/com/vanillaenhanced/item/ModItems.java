@@ -89,6 +89,8 @@ public class ModItems { //Class needed to register new items, must be in item fo
     public static final Item KNIFE = registerItem("knife", new KnifeItem(new Item.Settings().maxDamage(32)));
     public static final Item CACTUS_FRUIT = registerItem("cactus_fruit", new Item(new Item.Settings().food(ModFoodComponents.CACTUS_FRUIT)));
     public static final Item COOKED_CACTUS_FRUIT = registerItem("cooked_cactus_fruit", new Item(new Item.Settings().food(ModFoodComponents.COOKED_CACTUS_FRUIT)));
+    public static final Item CHERRY = registerItem("cherry", new Item(new Item.Settings().food(ModFoodComponents.CHERRY)));
+    public static final Item PRUNING_SHEARS = registerItem("pruning_shears", new Item(new Item.Settings()));
 
 
     //Vanilla Expanded Tools

@@ -255,6 +255,19 @@ public class ModBlocks {
                             .sounds(BlockSoundGroup.MOSS_CARPET) // What sound it will play
             )
     );
+    public static final Block CHERRY_LEAVES_CROP = registerBlock(
+            "cherry_leaves_crop",
+            new LeavesBlock(
+                    AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)
+            )
+    );
+    public static final Block CHERRY_SAPLING = registerBlock(
+            "cherry_sapling",
+            new SaplingBlock(
+                    ModSaplingGenerators.CHERRY,
+                    AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)
+            )
+    );
 
 
 

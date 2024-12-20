@@ -18,6 +18,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
                 ;
 

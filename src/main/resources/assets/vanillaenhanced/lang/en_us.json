@@ -64,6 +64,8 @@
 
   "block.vanillaenhanced.cut_cactus_block": "Cut Cactus",
   "block.vanillaenhanced.cauliflower_crop": "Cauliflower Crop",
+  "block.vanillaenhanced.cherry_sapling": "Cherry Sapling",
+  "block.vanillaenhanced.cherry_leaves_crop": "Cherry Leaves",
 
   "item.vanillaenhanced.endstone_brick": "End Stone Brick",
   "item.vanillaenhanced.iron_hammer_and_chisel": "§7Iron Hammer and Chisel§r",
@@ -74,6 +76,8 @@
   "item.vanillaenhanced.cactus_fruit": "Cactus Fruit",
   "item.vanillaenhanced.cooked_cactus_fruit": "Cooked Cactus Fruit",
   "item.vanillaenhanced.cauliflower_seeds": "Cauliflower Seeds",
+  "item.vanillaenhanced.cherry": "Cherry",
+  "item.vanillaenhanced.pruning_shears": "Pruning Shears",
 
   "item.vanillaenhanced.endstone_sword": "Endstone Sword",
   "item.vanillaenhanced.endstone_pickaxe": "Endstone Pickaxe",

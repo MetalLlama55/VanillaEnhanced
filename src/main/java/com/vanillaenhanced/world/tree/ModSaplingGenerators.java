@@ -16,4 +16,11 @@ public class ModSaplingGenerators {
             Optional.empty()
             );
 
+    public static final SaplingGenerator CHERRY = new SaplingGenerator(
+            VanillaEnhancedMod.MOD_ID + ":cherry",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.CHERRY_KEY),
+            Optional.empty()
+            );
+
 }
