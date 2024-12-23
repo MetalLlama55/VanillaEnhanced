@@ -55,7 +55,7 @@ public class ModItems { //Class needed to register new items, must be in item fo
     public static final Item PINK_GARNET_HAMMER = registerItem(
             "pink_garnet_hammer",
             new HammerItem(ModToolMaterials.PINK_GARNET,
-                    new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 7, 3.5f))));
+                    new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 7, -3.5f))));
 
 
     //Pink Garnet Armor
@@ -97,23 +97,23 @@ public class ModItems { //Class needed to register new items, must be in item fo
     public static final Item ENDSTONE_SWORD = registerItem(
             "endstone_sword",
             new SwordItem(ModToolMaterials.ENDSTONE,
-                    new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ENDSTONE, 5, -3.0f))));
+                    new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ENDSTONE, 4, -3.0f))));
     public static final Item ENDSTONE_PICKAXE = registerItem(
             "endstone_pickaxe",
             new PickaxeItem(ModToolMaterials.ENDSTONE,
-                    new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.ENDSTONE, 2, -2.0f))));
+                    new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.ENDSTONE, 1, -2.0f))));
     public static final Item ENDSTONE_AXE = registerItem(
             "endstone_axe",
             new AxeItem(ModToolMaterials.ENDSTONE,
-                    new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.ENDSTONE, 6, -3.5f))));
+                    new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.ENDSTONE, 5, -3.5f))));
     public static final Item ENDSTONE_SHOVEL = registerItem(
             "endstone_shovel",
             new ShovelItem(ModToolMaterials.ENDSTONE,
-                    new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.ENDSTONE, 1, -2.0f))));
+                    new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.ENDSTONE, 0, -2.0f))));
     public static final Item ENDSTONE_HOE = registerItem(
             "endstone_hoe",
             new HoeItem(ModToolMaterials.ENDSTONE,
-                    new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.ENDSTONE, 0, -2.0f))));
+                    new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.ENDSTONE, -1, -2.0f))));
 
 
     //Vanilla Enhanced Armor

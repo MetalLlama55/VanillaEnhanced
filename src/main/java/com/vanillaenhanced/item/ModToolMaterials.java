@@ -10,8 +10,8 @@ import net.minecraft.registry.tag.TagKey;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    PINK_GARNET(ModTags.Blocks.INCORRECT_FOR_PINK_GARNET_TOOL, 1500, 6.0F, 4.0F, 25, () -> Ingredient.ofItems(ModItems.PINK_GARNET)),
-    ENDSTONE(ModTags.Blocks.INCORRECT_FOR_ENDSTONE_TOOL, 500, 5.0F, 2.0F, 10, () -> Ingredient.ofItems(ModItems.ENDSTONE_BRICK));
+    PINK_GARNET(ModTags.Blocks.INCORRECT_FOR_PINK_GARNET_TOOL, 1500, 6.0F, 0.0F, 25, () -> Ingredient.ofItems(ModItems.PINK_GARNET)),
+    ENDSTONE(ModTags.Blocks.INCORRECT_FOR_ENDSTONE_TOOL, 500, 5.0F, 0.0F, 10, () -> Ingredient.ofItems(ModItems.ENDSTONE_BRICK));
 
 
     private final TagKey<Block> inverseTag;
