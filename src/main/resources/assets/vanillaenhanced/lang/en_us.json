@@ -1,0 +1,94 @@
+{
+  "item.vanillaenhanced.pink_garnet": "Pink Garnet",
+  "item.vanillaenhanced.raw_pink_garnet": "Raw Pink Garnet",
+  "item.vanillaenhanced.chisel": "Chisel",
+  "item.vanillaenhanced.cauliflower": "Cauliflower",
+  "item.vanillaenhanced.starlight_ashes": "Starlight Ashes",
+  "item.vanillaenhanced.honey_berries": "Honey Berries",
+
+  "item.vanillaenhanced.pink_garnet_sword": "Pink Garnet Sword",
+  "item.vanillaenhanced.pink_garnet_axe": "Pink Garnet Axe",
+  "item.vanillaenhanced.pink_garnet_pickaxe": "Pink Garnet Pickaxe",
+  "item.vanillaenhanced.pink_garnet_shovel": "Pink Garnet Shovel",
+  "item.vanillaenhanced.pink_garnet_hoe": "Pink Garnet Hoe",
+  "item.vanillaenhanced.pink_garnet_hammer": "Pink Garnet Hammer",
+
+  "item.vanillaenhanced.pink_garnet_helmet": "Pink Garnet Helmet",
+  "item.vanillaenhanced.pink_garnet_chestplate": "Pink Garnet Chestplate",
+  "item.vanillaenhanced.pink_garnet_leggings": "Pink Garnet Leggings",
+  "item.vanillaenhanced.pink_garnet_boots": "Pink Garnet Boots",
+
+  "block.vanillaenhanced.pink_garnet_block": "Pink Garnet Block",
+  "block.vanillaenhanced.raw_pink_garnet_block": "Raw Pink Garnet Block",
+  "block.vanillaenhanced.pink_garnet_ore": "Pink Garnet Ore",
+  "block.vanillaenhanced.pink_garnet_deepslate_ore": "Deepslate Pink Garnet Ore",
+  "block.vanillaenhanced.pink_garnet_nether_ore": "Nether Pink Garnet Ore",
+  "block.vanillaenhanced.pink_garnet_end_ore": "End Pink Garnet Ore",
+  "block.vanillaenhanced.pink_garnet_stairs": "Pink Garnet Stairs",
+  "block.vanillaenhanced.pink_garnet_slab": "Pink Garnet Slab",
+  "block.vanillaenhanced.pink_garnet_button": "Pink Garnet Button",
+  "block.vanillaenhanced.pink_garnet_pressure_plate": "Pink Garnet Pressure Plate",
+  "block.vanillaenhanced.pink_garnet_fence": "Pink Garnet Fence",
+  "block.vanillaenhanced.pink_garnet_fence_gate": "Pink Garnet Fence Gate",
+  "block.vanillaenhanced.pink_garnet_wall": "Pink Garnet Wall",
+  "block.vanillaenhanced.pink_garnet_door": "Pink Garnet Door",
+  "block.vanillaenhanced.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
+  "block.vanillaenhanced.pink_garnet_lamp": "Pink Garnet Lamp",
+  "block.vanillaenhanced.magic_block": "Magic Block",
+  "block.vanillaenhanced.honey_berry_bush": "Honey Berry Bush",
+  "block.vanillaenhanced.driftwood_log": "Driftwood Log",
+  "block.vanillaenhanced.driftwood_wood": "Driftwood Wood",
+  "block.vanillaenhanced.stripped_driftwood_log": "Stripped Driftwood Log",
+  "block.vanillaenhanced.stripped_driftwood_wood": "Stripped Driftwood Wood",
+  "block.vanillaenhanced.driftwood_planks": "Driftwood Planks",
+  "block.vanillaenhanced.driftwood_sapling": "Driftwood Sapling",
+
+  "enchantment.vanillaenhanced.lightning_striker": "Lightning Striker",
+
+  "tooltip.vanillaenhanced.magic_block.tooltip": "This block emits some §bmagical§r properties (Not Yet Implemented)",
+  "tooltip.vanillaenhanced.chisel.shift_down": "This chisel can change some blocks into brick versions",
+  "tooltip.vanillaenhanced.chisel": "Press §eShift§r for some more information",
+  "tooltip.vanillaenhanced.cauliflower.tooltip": "Tasty",
+
+  "itemgroup.vanillaenhanced.pink_garnet_items": "Pink Garnet Items",
+  "itemgroup.vanillaenhanced.pink_garnet_blocks": "Pink Garnet Blocks",
+
+
+  "itemgroup.vanillaenhanced.vanilla_enhanced_items": "Vanilla Enhanced Items",
+  "itemgroup.vanillaenhanced.vanilla_enhanced_blocks": "Vanilla Enhanced Blocks",
+
+  "tooltip.vanillaenhanced.hammer_and_chisel.shift_down": "Converts §2blocks§r into their slab variant",
+  "tooltip.vanillaenhanced.hammer_and_chisel": "Press §eShift§r for more information",
+  "tooltip.vanillaenhanced.knife.shift_down": "Cuts some blocks into edible versions",
+  "tooltip.vanillaenhanced.knife": "Press §eShift§r for more information",
+
+  "block.vanillaenhanced.cut_cactus_block": "Cut Cactus",
+  "block.vanillaenhanced.cauliflower_crop": "Cauliflower Crop",
+  "block.vanillaenhanced.cherry_sapling": "Cherry Sapling",
+  "block.vanillaenhanced.cherry_leaves_crop": "Cherry Leaves",
+
+  "item.vanillaenhanced.endstone_brick": "End Stone Brick",
+  "item.vanillaenhanced.iron_hammer_and_chisel": "§7Iron Hammer and Chisel§r",
+  "item.vanillaenhanced.gold_hammer_and_chisel": "§eGold Hammer and Chisel§r",
+  "item.vanillaenhanced.diamond_hammer_and_chisel": "§3Diamond Hammer and Chisel§r",
+  "item.vanillaenhanced.netherite_hammer_and_chisel": "§8Netherite Hammer and Chisel§r",
+  "item.vanillaenhanced.knife": "Knife",
+  "item.vanillaenhanced.cactus_fruit": "Cactus Fruit",
+  "item.vanillaenhanced.cooked_cactus_fruit": "Cooked Cactus Fruit",
+  "item.vanillaenhanced.cauliflower_seeds": "Cauliflower Seeds",
+  "item.vanillaenhanced.cherry": "Cherry",
+  "item.vanillaenhanced.pruning_shears": "Pruning Shears",
+
+  "item.vanillaenhanced.endstone_sword": "Endstone Sword",
+  "item.vanillaenhanced.endstone_pickaxe": "Endstone Pickaxe",
+  "item.vanillaenhanced.endstone_axe": "Endstone Axe",
+  "item.vanillaenhanced.endstone_shovel": "Endstone Shovel",
+  "item.vanillaenhanced.endstone_hoe": "Endstone Hoe",
+
+  "item.vanillaenhanced.endstone_helmet": "Endstone Helmet",
+  "item.vanillaenhanced.endstone_chestplate": "Endstone Chestplate",
+  "item.vanillaenhanced.endstone_leggings": "Endstone Leggings",
+  "item.vanillaenhanced.endstone_boots": "Endstone Boots"
+
+
+}

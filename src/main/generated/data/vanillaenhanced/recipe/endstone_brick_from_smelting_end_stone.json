@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 400,
+  "experience": 0.15,
+  "group": "endstone",
+  "ingredient": {
+    "item": "minecraft:end_stone"
+  },
+  "result": {
+    "id": "vanillaenhanced:endstone_brick"
+  }
+}

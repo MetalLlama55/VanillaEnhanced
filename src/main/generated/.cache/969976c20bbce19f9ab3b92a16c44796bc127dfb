@@ -1,0 +1,10 @@
+// 1.21	2024-12-20T14:39:47.1882846	Vanilla Enhanced Mod/Tags for minecraft:item
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\vanillaenhanced\tags\item\transformable_items.json
+7cebe61701428fc1d32030fe725b929507ba6d8d data\minecraft\tags\item\swords.json
+3787110128fbbb938253f7de2fe055302e7d8d0b data\minecraft\tags\item\pickaxes.json
+9ee9b81c60c86e9dba1b3cf2ab4d4981bbb2af69 data\minecraft\tags\item\axes.json
+08ef9d5ab9847fb3b4ef5d4566488dbbd3b00f60 data\minecraft\tags\item\trimmable_armor.json
+7ca762d656b099b3405f5c95822b18e471afd035 data\minecraft\tags\item\shovels.json
+06650f1d0b4c42c9ee02f60609e6dca45fbfd4cc data\minecraft\tags\item\hoes.json
+6efdc0e4f85c5e660fc716beb09a53bc4fd9047e data\minecraft\tags\item\planks.json
+7025d272df9b42d670f93ba7e2cacae639efbf33 data\minecraft\tags\item\logs_that_burn.json

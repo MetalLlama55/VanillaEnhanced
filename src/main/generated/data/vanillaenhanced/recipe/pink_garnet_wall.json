@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "G": {
+      "item": "vanillaenhanced:pink_garnet"
+    }
+  },
+  "pattern": [
+    "   ",
+    "GGG",
+    "GGG"
+  ],
+  "result": {
+    "count": 6,
+    "id": "vanillaenhanced:pink_garnet_wall"
+  }
+}

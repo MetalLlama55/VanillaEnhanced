@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": {
+      "item": "vanillaenhanced:pink_garnet"
+    },
+    "I": {
+      "item": "minecraft:iron_chestplate"
+    }
+  },
+  "pattern": [
+    "GIG",
+    "GGG",
+    "GGG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanillaenhanced:pink_garnet_chestplate"
+  }
+}

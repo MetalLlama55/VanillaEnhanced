@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": {
+      "item": "vanillaenhanced:pink_garnet"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " GG",
+    " SG",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanillaenhanced:pink_garnet_axe"
+  }
+}

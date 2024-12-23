@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "vanillaenhanced:block/cut_cactus_block"
+    }
+  }
+}

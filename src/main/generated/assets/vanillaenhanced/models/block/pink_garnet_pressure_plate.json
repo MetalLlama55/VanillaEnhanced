@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_up",
+  "textures": {
+    "texture": "vanillaenhanced:block/pink_garnet_block"
+  }
+}

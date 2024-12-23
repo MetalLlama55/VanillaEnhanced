@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": {
+      "item": "vanillaenhanced:pink_garnet"
+    },
+    "H": {
+      "item": "minecraft:iron_helmet"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "GHG",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanillaenhanced:pink_garnet_helmet"
+  }
+}
