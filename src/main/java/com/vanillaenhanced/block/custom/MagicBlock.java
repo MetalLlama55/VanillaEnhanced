@@ -1,6 +1,6 @@
 package com.vanillaenhanced.block.custom;
 
-import com.vanillaenhanced.block.ModBlocks;
+import com.vanillaenhanced.item.ModItems;
 import com.vanillaenhanced.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -37,7 +37,7 @@ public class MagicBlock extends Block {
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if (entity instanceof ItemEntity itemEntity) {
             if (isValidItem(itemEntity.getStack())) {
-                itemEntity.setStack(new ItemStack(ModBlocks.PINK_GARNET_ORE, itemEntity.getStack().getCount()));
+                itemEntity.setStack(new ItemStack(ModItems.PINK_GARNET, itemEntity.getStack().getCount()));
             }
         }
 

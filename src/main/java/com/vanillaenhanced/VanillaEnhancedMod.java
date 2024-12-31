@@ -32,6 +32,8 @@ public class VanillaEnhancedMod implements ModInitializer {
 
 		ModEnchantmentEffects.registerEnchantmentEffects();
 
+		ModCustomTrades.registerCustomTrades();
+
 		CompostingRegistry.registerCompostingChance();
 
 		StrippableBlocksRegistry.registerStrippableBlock();

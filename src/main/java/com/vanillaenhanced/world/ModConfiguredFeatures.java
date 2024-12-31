@@ -16,9 +16,7 @@ import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
-import net.minecraft.world.gen.foliage.FoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
@@ -27,6 +25,10 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> PINK_GARNET_ORE_KEY = registerKey("pink_garnet_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_PINK_GARNET_ORE_KEY = registerKey("nether_pink_garnet_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> END_PINK_GARNET_ORE_KEY = registerKey("end_pink_garnet_ore");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_SAPPHIRE_ORE_KEY = registerKey("nether_sapphire_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> END_SAPPHIRE_ORE_KEY = registerKey("end_sapphire_ore");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> DRIFTWOOD_KEY = registerKey("driftwood");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CHERRY_KEY = registerKey("cherry");
@@ -51,6 +53,18 @@ public class ModConfiguredFeatures {
         register(context, PINK_GARNET_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldPinkGarnetOres, 6));
         register(context, NETHER_PINK_GARNET_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherPinkGarnetOres, 7));
         register(context, END_PINK_GARNET_ORE_KEY, Feature.ORE, new OreFeatureConfig(endPinkGarnetOres, 8));
+
+        List<OreFeatureConfig.Target> overworldSapphireOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.SAPPHIRE_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.SAPPHIRE_DEEPSLATE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> netherSapphireOres =
+                List.of(OreFeatureConfig.createTarget(netherReplaceables, ModBlocks.SAPPHIRE_NETHER_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> endSapphireOres =
+                List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.SAPPHIRE_END_ORE.getDefaultState()));
+
+        register(context, SAPPHIRE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 5));
+        register(context, NETHER_SAPPHIRE_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherSapphireOres, 6));
+        register(context, END_SAPPHIRE_ORE_KEY, Feature.ORE, new OreFeatureConfig(endSapphireOres, 7));
 
         //Tree Gen
         register(context, DRIFTWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(

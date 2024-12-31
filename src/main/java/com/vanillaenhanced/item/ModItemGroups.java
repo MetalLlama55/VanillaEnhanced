@@ -74,7 +74,10 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.CUT_CACTUS_BLOCK);
                         entries.add(ModBlocks.CHERRY_LEAVES_CROP);
-
+                        entries.add(ModBlocks.SAPPHIRE_ORE);
+                        entries.add(ModBlocks.SAPPHIRE_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.SAPPHIRE_NETHER_ORE);
+                        entries.add(ModBlocks.SAPPHIRE_END_ORE);
                     })
                     .build());
 
@@ -93,17 +96,27 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CHERRY_SAPLING);
                         entries.add(ModItems.PRUNING_SHEARS);
                         entries.add(ModItems.CHERRY);
+                        entries.add(ModItems.SAPPHIRE);
 
                         entries.add(ModItems.ENDSTONE_HELMET);
                         entries.add(ModItems.ENDSTONE_CHESTPLATE);
                         entries.add(ModItems.ENDSTONE_LEGGINGS);
                         entries.add(ModItems.ENDSTONE_BOOTS);
+                        entries.add(ModItems.SAPPHIRE_HELMET);
+                        entries.add(ModItems.SAPPHIRE_CHESTPLATE);
+                        entries.add(ModItems.SAPPHIRE_LEGGINGS);
+                        entries.add(ModItems.SAPPHIRE_BOOTS);
 
                         entries.add(ModItems.ENDSTONE_SWORD);
                         entries.add(ModItems.ENDSTONE_PICKAXE);
                         entries.add(ModItems.ENDSTONE_AXE);
                         entries.add(ModItems.ENDSTONE_SHOVEL);
                         entries.add(ModItems.ENDSTONE_HOE);
+                        entries.add(ModItems.SAPPHIRE_SWORD);
+                        entries.add(ModItems.SAPPHIRE_PICKAXE);
+                        entries.add(ModItems.SAPPHIRE_AXE);
+                        entries.add(ModItems.SAPPHIRE_SHOVEL);
+                        entries.add(ModItems.SAPPHIRE_HOE);
                     })
                     .build());
 

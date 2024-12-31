@@ -8,12 +8,9 @@ import com.vanillaenhanced.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
@@ -101,9 +98,20 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CUT_CACTUS_BLOCK, multipleOreDrops(ModBlocks.CUT_CACTUS_BLOCK, ModItems.CACTUS_FRUIT, 1, 3));
         addDrop(ModBlocks.CHERRY_LEAVES_CROP, leavesDrops(ModBlocks.CHERRY_LEAVES_CROP, ModBlocks.CHERRY_SAPLING, 0.0625f));
 
+        addDrop(ModBlocks.SAPPHIRE_ORE, oreDrops(ModBlocks.SAPPHIRE_ORE, ModItems.SAPPHIRE));
+        addDrop(ModBlocks.SAPPHIRE_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.SAPPHIRE_DEEPSLATE_ORE, ModItems.SAPPHIRE,2, 5 ));
+        addDrop(ModBlocks.SAPPHIRE_NETHER_ORE, multipleOreDrops(ModBlocks.SAPPHIRE_NETHER_ORE, ModItems.SAPPHIRE,1, 3 ));
+        addDrop(ModBlocks.SAPPHIRE_END_ORE, multipleOreDrops(ModBlocks.SAPPHIRE_END_ORE, ModItems.SAPPHIRE,2, 5 ));
 
-        BlockStatePropertyLootCondition.Builder cherryBuilder = BlockStatePropertyLootCondition.builder(ModBlocks.CHERRY_LEAVES_CROP)
-                .properties(StatePredicate.Builder.create().exactMatch(CherryCropBlock.AGE, CherryCropBlock.MAX_AGE));
+        /*addDrop(ModBlocks.PINK_GARNET_STAIRS);
+        addDrop(ModBlocks.PINK_GARNET_BUTTON);
+        addDrop(ModBlocks.PINK_GARNET_PRESSURE_PLATE);
+        addDrop(ModBlocks.PINK_GARNET_WALL);
+        addDrop(ModBlocks.PINK_GARNET_FENCE);
+        addDrop(ModBlocks.PINK_GARNET_FENCE_GATE);
+        addDrop(ModBlocks.PINK_GARNET_TRAP_DOOR);
+        addDrop(ModBlocks.PINK_GARNET_DOOR, doorDrops(ModBlocks.PINK_GARNET_DOOR));
+        addDrop(ModBlocks.PINK_GARNET_SLAB, slabDrops(ModBlocks.PINK_GARNET_SLAB));*/
 
     }
 

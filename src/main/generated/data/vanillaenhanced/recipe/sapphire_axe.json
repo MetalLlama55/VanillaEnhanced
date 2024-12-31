@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "vanillaenhanced:sapphire"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " SS",
+    " sS",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanillaenhanced:sapphire_axe"
+  }
+}

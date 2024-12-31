@@ -4,6 +4,10 @@
     "vanillaenhanced:raw_pink_garnet_block",
     "vanillaenhanced:pink_garnet_ore",
     "vanillaenhanced:pink_garnet_deepslate_ore",
-    "vanillaenhanced:magic_block"
+    "vanillaenhanced:magic_block",
+    "vanillaenhanced:sapphire_ore",
+    "vanillaenhanced:sapphire_deepslate_ore",
+    "vanillaenhanced:sapphire_nether_ore",
+    "vanillaenhanced:sapphire_end_ore"
   ]
 }

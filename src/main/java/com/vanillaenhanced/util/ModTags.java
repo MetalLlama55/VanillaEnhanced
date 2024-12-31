@@ -18,6 +18,9 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_ENDSTONE_TOOL = createTag("needs_endstone_tool");
         public static final TagKey<Block> INCORRECT_FOR_ENDSTONE_TOOL = createTag("incorrect_for_endstone_tool");
 
+        public static final TagKey<Block> NEEDS_SAPPHIRE_TOOL = createTag("needs_sapphire_tool");
+        public static final TagKey<Block> INCORRECT_FOR_SAPPHIRE_TOOL = createTag("incorrect_for_sapphire_tool");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(VanillaEnhancedMod.MOD_ID, name));
         }

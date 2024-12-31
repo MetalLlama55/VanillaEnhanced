@@ -1,5 +1,9 @@
 {
   "values": [
-    "vanillaenhanced:pink_garnet_deepslate_ore"
+    "vanillaenhanced:pink_garnet_deepslate_ore",
+    "vanillaenhanced:sapphire_ore",
+    "vanillaenhanced:sapphire_deepslate_ore",
+    "vanillaenhanced:sapphire_nether_ore",
+    "vanillaenhanced:sapphire_end_ore"
   ]
 }

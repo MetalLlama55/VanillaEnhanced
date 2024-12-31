@@ -4,7 +4,6 @@ import com.vanillaenhanced.VanillaEnhancedMod;
 import com.vanillaenhanced.block.custom.*;
 import com.vanillaenhanced.world.tree.ModSaplingGenerators;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
@@ -266,6 +265,47 @@ public class ModBlocks {
             new SaplingBlock(
                     ModSaplingGenerators.CHERRY,
                     AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)
+            )
+    );
+
+    public static final Block SAPPHIRE_ORE = registerBlock(
+            "sapphire_ore",
+            new ExperienceDroppingBlock(
+                    UniformIntProvider.create(2,5),
+                    AbstractBlock.Settings.create()
+                            .strength(5f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.STONE)
+            )
+    );
+    public static final Block SAPPHIRE_DEEPSLATE_ORE = registerBlock(
+            "sapphire_deepslate_ore",
+            new ExperienceDroppingBlock(
+                    UniformIntProvider.create(2,8),
+                    AbstractBlock.Settings.create()
+                            .strength(5f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.DEEPSLATE)
+            )
+    );
+    public static final Block SAPPHIRE_NETHER_ORE = registerBlock(
+            "sapphire_nether_ore",
+            new ExperienceDroppingBlock(
+                    UniformIntProvider.create(1,5),
+                    AbstractBlock.Settings.create()
+                            .strength(5f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.NETHER_ORE)
+            )
+    );
+    public static final Block SAPPHIRE_END_ORE = registerBlock(
+            "sapphire_end_ore",
+            new ExperienceDroppingBlock(
+                    UniformIntProvider.create(4,6),
+                    AbstractBlock.Settings.create()
+                            .strength(5f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.STONE)
             )
     );
 

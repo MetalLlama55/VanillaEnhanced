@@ -11,7 +11,8 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
     PINK_GARNET(ModTags.Blocks.INCORRECT_FOR_PINK_GARNET_TOOL, 1500, 6.0F, 0.0F, 25, () -> Ingredient.ofItems(ModItems.PINK_GARNET)),
-    ENDSTONE(ModTags.Blocks.INCORRECT_FOR_ENDSTONE_TOOL, 500, 5.0F, 0.0F, 10, () -> Ingredient.ofItems(ModItems.ENDSTONE_BRICK));
+    ENDSTONE(ModTags.Blocks.INCORRECT_FOR_ENDSTONE_TOOL, 500, 5.0F, 0.0F, 10, () -> Ingredient.ofItems(ModItems.ENDSTONE_BRICK)),
+    SAPPHIRE(ModTags.Blocks.INCORRECT_FOR_SAPPHIRE_TOOL, 1200, 5.0F, 0.0F, 20, () -> Ingredient.ofItems(ModItems.SAPPHIRE));
 
 
     private final TagKey<Block> inverseTag;

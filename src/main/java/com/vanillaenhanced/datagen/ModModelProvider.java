@@ -2,7 +2,6 @@ package com.vanillaenhanced.datagen;
 
 import com.vanillaenhanced.block.ModBlocks;
 import com.vanillaenhanced.block.custom.CauliflowerCropBlock;
-import com.vanillaenhanced.block.custom.CherryCropBlock;
 import com.vanillaenhanced.block.custom.HoneyBerryBushBlock;
 import com.vanillaenhanced.block.custom.PinkGarnetLampBlock;
 import com.vanillaenhanced.item.ModItems;
@@ -10,10 +9,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
-import net.minecraft.state.property.Properties;
-import net.minecraft.state.property.Property;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.Direction;
 
 public class ModModelProvider extends FabricModelProvider {
 
@@ -70,6 +66,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CUT_CACTUS_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHERRY_LEAVES_CROP);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIRE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIRE_DEEPSLATE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIRE_NETHER_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIRE_END_ORE);
+
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.CHERRY_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
     }
@@ -111,6 +112,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CHERRY, Models.GENERATED);
         itemModelGenerator.register(ModBlocks.CHERRY_SAPLING.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModItems.PRUNING_SHEARS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SAPPHIRE, Models.GENERATED);
 
 
         itemModelGenerator.register(ModItems.ENDSTONE_SWORD, Models.HANDHELD);
@@ -119,10 +121,21 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ENDSTONE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ENDSTONE_HOE, Models.HANDHELD);
 
+        itemModelGenerator.register(ModItems.SAPPHIRE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SAPPHIRE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SAPPHIRE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SAPPHIRE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SAPPHIRE_HOE, Models.HANDHELD);
+
         itemModelGenerator.registerArmor((ArmorItem) ModItems.ENDSTONE_HELMET);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.ENDSTONE_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.ENDSTONE_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.ENDSTONE_BOOTS);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SAPPHIRE_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SAPPHIRE_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SAPPHIRE_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SAPPHIRE_BOOTS);
     }
 
 }

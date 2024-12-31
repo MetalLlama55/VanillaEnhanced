@@ -39,6 +39,16 @@ public class ModArmorMaterials {
             }), 20, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, () -> Ingredient.ofItems(ModItems.ENDSTONE_BRICK),
                     List.of(new ArmorMaterial.Layer(Identifier.of(VanillaEnhancedMod.MOD_ID, "endstone"))), 0, 0));
 
+    public static final RegistryEntry<ArmorMaterial> SAPPHIRE_ARMOR_MATERIAL = registerArmorMaterial(
+            "sapphire", () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 3);
+                map.put(ArmorItem.Type.LEGGINGS, 5);
+                map.put(ArmorItem.Type.CHESTPLATE, 6);
+                map.put(ArmorItem.Type.HELMET, 3);
+                map.put(ArmorItem.Type.BODY, 4);
+            }), 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.SAPPHIRE),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(VanillaEnhancedMod.MOD_ID, "sapphire"))), 0, 0));
+
     public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material) {
         return Registry.registerReference(Registries.ARMOR_MATERIAL, Identifier.of(VanillaEnhancedMod.MOD_ID, name), material.get());
     }

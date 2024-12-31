@@ -22,16 +22,27 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RAW_PINK_GARNET_BLOCK)
                 .add(ModBlocks.PINK_GARNET_ORE)
                 .add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE)
-                .add(ModBlocks.MAGIC_BLOCK);
+                .add(ModBlocks.MAGIC_BLOCK)
+
+                .add(ModBlocks.SAPPHIRE_ORE)
+                .add(ModBlocks.SAPPHIRE_DEEPSLATE_ORE)
+                .add(ModBlocks.SAPPHIRE_NETHER_ORE)
+                .add(ModBlocks.SAPPHIRE_END_ORE);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.PINK_GARNET_ORE);
+                .add(ModBlocks.PINK_GARNET_ORE)
+                .add(ModBlocks.PINK_GARNET_NETHER_ORE)
+                .add(ModBlocks.PINK_GARNET_END_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+                .add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE)
+                .add(ModBlocks.SAPPHIRE_ORE)
+                .add(ModBlocks.SAPPHIRE_DEEPSLATE_ORE)
+                .add(ModBlocks.SAPPHIRE_NETHER_ORE)
+                .add(ModBlocks.SAPPHIRE_END_ORE);
 
         getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.PINK_GARNET_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.PINK_GARNET_FENCE_GATE);
@@ -52,6 +63,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         //Vanilla Enhanced Tags
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_ENDSTONE_TOOL)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .addTag(BlockTags.PICKAXE_MINEABLE);
     }
 
 }

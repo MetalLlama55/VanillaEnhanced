@@ -91,6 +91,7 @@ public class ModItems { //Class needed to register new items, must be in item fo
     public static final Item COOKED_CACTUS_FRUIT = registerItem("cooked_cactus_fruit", new Item(new Item.Settings().food(ModFoodComponents.COOKED_CACTUS_FRUIT)));
     public static final Item CHERRY = registerItem("cherry", new Item(new Item.Settings().food(ModFoodComponents.CHERRY)));
     public static final Item PRUNING_SHEARS = registerItem("pruning_shears", new Item(new Item.Settings()));
+    public static final Item SAPPHIRE = registerItem("sapphire", new Item(new Item.Settings()));
 
 
     //Vanilla Expanded Tools
@@ -115,6 +116,27 @@ public class ModItems { //Class needed to register new items, must be in item fo
             new HoeItem(ModToolMaterials.ENDSTONE,
                     new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.ENDSTONE, -1, -2.0f))));
 
+    public static final Item SAPPHIRE_SWORD = registerItem(
+            "sapphire_sword",
+            new SwordItem(ModToolMaterials.SAPPHIRE,
+                    new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.SAPPHIRE, 5, -2.6f))));
+    public static final Item SAPPHIRE_PICKAXE = registerItem(
+            "sapphire_pickaxe",
+            new PickaxeItem(ModToolMaterials.SAPPHIRE,
+                    new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.SAPPHIRE, 1, -2.0f))));
+    public static final Item SAPPHIRE_AXE = registerItem(
+            "sapphire_axe",
+            new AxeItem(ModToolMaterials.SAPPHIRE,
+                    new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.SAPPHIRE, 6, -3.0f))));
+    public static final Item SAPPHIRE_SHOVEL = registerItem(
+            "sapphire_shovel",
+            new ShovelItem(ModToolMaterials.SAPPHIRE,
+                    new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.SAPPHIRE, 0, -2.0f))));
+    public static final Item SAPPHIRE_HOE = registerItem(
+            "sapphire_hoe",
+            new HoeItem(ModToolMaterials.SAPPHIRE,
+                    new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.SAPPHIRE, -1, -2.0f))));
+
 
     //Vanilla Enhanced Armor
     public static final Item ENDSTONE_HELMET = registerItem(
@@ -132,6 +154,23 @@ public class ModItems { //Class needed to register new items, must be in item fo
     public static final Item ENDSTONE_BOOTS =registerItem(
             "endstone_boots",
             new ArmorItem(ModArmorMaterials.ENDSTONE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(10))));
+
+    public static final Item SAPPHIRE_HELMET = registerItem(
+            "sapphire_helmet",
+            new ModArmorItem(ModArmorMaterials.SAPPHIRE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(11))));
+    public static final Item SAPPHIRE_CHESTPLATE = registerItem(
+            "sapphire_chestplate",
+            new ArmorItem(ModArmorMaterials.SAPPHIRE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+    public static final Item SAPPHIRE_LEGGINGS = registerItem(
+            "sapphire_leggings",
+            new ArmorItem(ModArmorMaterials.SAPPHIRE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(12))));
+    public static final Item SAPPHIRE_BOOTS =registerItem(
+            "sapphire_boots",
+            new ArmorItem(ModArmorMaterials.SAPPHIRE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(10))));
 
 

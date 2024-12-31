@@ -20,7 +20,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
 
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
-                ;
+                .add(ModItems.SAPPHIRE);
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.PINK_GARNET_SWORD);
@@ -51,22 +51,35 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         //Vanilla Enhanced Tags
         getOrCreateTagBuilder(ItemTags.SWORDS)
-                .add(ModItems.ENDSTONE_SWORD);
+                .add(ModItems.ENDSTONE_SWORD)
+                .add(ModItems.SAPPHIRE_SWORD);
+
         getOrCreateTagBuilder(ItemTags.PICKAXES)
-                .add(ModItems.ENDSTONE_PICKAXE);
+                .add(ModItems.ENDSTONE_PICKAXE)
+                .add(ModItems.SAPPHIRE_PICKAXE);
+
         getOrCreateTagBuilder(ItemTags.AXES)
-                .add(ModItems.ENDSTONE_AXE);
+                .add(ModItems.ENDSTONE_AXE)
+                .add(ModItems.SAPPHIRE_AXE);
+
         getOrCreateTagBuilder(ItemTags.SHOVELS)
-                .add(ModItems.ENDSTONE_SHOVEL);
+                .add(ModItems.ENDSTONE_SHOVEL)
+                .add(ModItems.SAPPHIRE_SHOVEL);
+
         getOrCreateTagBuilder(ItemTags.HOES)
-                .add(ModItems.ENDSTONE_HOE);
+                .add(ModItems.ENDSTONE_HOE)
+                .add(ModItems.SAPPHIRE_HOE);
 
 
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.ENDSTONE_HELMET)
                 .add(ModItems.ENDSTONE_CHESTPLATE)
                 .add(ModItems.ENDSTONE_LEGGINGS)
-                .add(ModItems.ENDSTONE_BOOTS);
+                .add(ModItems.ENDSTONE_BOOTS)
+                .add(ModItems.SAPPHIRE_HELMET)
+                .add(ModItems.SAPPHIRE_CHESTPLATE)
+                .add(ModItems.SAPPHIRE_LEGGINGS)
+                .add(ModItems.SAPPHIRE_BOOTS);
     }
 
 }

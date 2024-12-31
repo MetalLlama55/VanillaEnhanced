@@ -1,5 +1,7 @@
 {
   "values": [
-    "vanillaenhanced:pink_garnet_ore"
+    "vanillaenhanced:pink_garnet_ore",
+    "vanillaenhanced:pink_garnet_nether_ore",
+    "vanillaenhanced:pink_garnet_end_ore"
   ]
 }

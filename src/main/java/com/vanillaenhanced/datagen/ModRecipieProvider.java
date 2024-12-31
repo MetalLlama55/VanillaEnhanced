@@ -244,13 +244,23 @@ public class ModRecipieProvider extends FabricRecipeProvider {
                 Items.END_STONE);
         List<ItemConvertible> CACTUS_SMELTABLES = List.of(
                 ModItems.CACTUS_FRUIT);
+        List<ItemConvertible> SAPPHIRE_SMELTABLES = List.of(
+                ModBlocks.SAPPHIRE_ORE,
+                ModBlocks.SAPPHIRE_DEEPSLATE_ORE,
+                ModBlocks.SAPPHIRE_NETHER_ORE,
+                ModBlocks.SAPPHIRE_END_ORE);
 
 
         offerSmelting(recipeExporter, ENDSTONE_SMELTABLES, RecipeCategory.MISC, ModItems.ENDSTONE_BRICK, 0.15f, 400, "endstone");
         offerSmelting(recipeExporter, CACTUS_SMELTABLES, RecipeCategory.MISC, ModItems.COOKED_CACTUS_FRUIT, 0.25f, 200, "cactus");
         offerBlasting(recipeExporter, ENDSTONE_SMELTABLES, RecipeCategory.MISC, ModItems.ENDSTONE_BRICK, 0.15f, 200, "endstone");
 
+        offerSmelting(recipeExporter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE, 0.25f, 200, "sapphire");
+        offerBlasting(recipeExporter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE, 0.25f, 100, "sapphire");
+
         offerNetheriteUpgradeRecipe(recipeExporter, ModItems.DIAMOND_HAMMER_AND_CHISEL, RecipeCategory.TOOLS, ModItems.NETHERITE_HAMMER_AND_CHISEL);
+
+        //offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.SAPPHIRE, RecipeCategory.DECORATIONS, ModBlocks.PINK_GARNET_BLOCK);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CHERRY, 5)
                 .input(ModBlocks.CHERRY_LEAVES_CROP)
@@ -378,6 +388,83 @@ public class ModRecipieProvider extends FabricRecipeProvider {
                 .pattern("B B")
                 .input('B', ModItems.ENDSTONE_BRICK)
                 .criterion(hasItem(ModItems.ENDSTONE_BRICK), conditionsFromItem(ModItems.ENDSTONE_BRICK))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SAPPHIRE_HELMET)
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("   ")
+                .input('S', ModItems.SAPPHIRE)
+                .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SAPPHIRE_CHESTPLATE)
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .input('S', ModItems.SAPPHIRE)
+                .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SAPPHIRE_LEGGINGS)
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .input('S', ModItems.SAPPHIRE)
+                .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SAPPHIRE_BOOTS)
+                .pattern("   ")
+                .pattern("S S")
+                .pattern("S S")
+                .input('S', ModItems.SAPPHIRE)
+                .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SAPPHIRE_SWORD)
+                .pattern(" S ")
+                .pattern(" S ")
+                .pattern(" s ")
+                .input('S', ModItems.SAPPHIRE)
+                .input('s', Items.STICK)
+                .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SAPPHIRE_PICKAXE)
+                .pattern("SSS")
+                .pattern(" s ")
+                .pattern(" s ")
+                .input('S', ModItems.SAPPHIRE)
+                .input('s', Items.STICK)
+                .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SAPPHIRE_AXE)
+                .pattern(" SS")
+                .pattern(" sS")
+                .pattern(" s ")
+                .input('S', ModItems.SAPPHIRE)
+                .input('s', Items.STICK)
+                .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SAPPHIRE_SHOVEL)
+                .pattern(" S ")
+                .pattern(" s ")
+                .pattern(" s ")
+                .input('S', ModItems.SAPPHIRE)
+                .input('s', Items.STICK)
+                .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SAPPHIRE_HOE)
+                .pattern(" SS")
+                .pattern(" s ")
+                .pattern(" s ")
+                .input('S', ModItems.SAPPHIRE)
+                .input('s', Items.STICK)
+                .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
                 .offerTo(recipeExporter);
 
     }

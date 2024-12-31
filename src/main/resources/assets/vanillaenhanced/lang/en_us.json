@@ -45,7 +45,7 @@
 
   "enchantment.vanillaenhanced.lightning_striker": "Lightning Striker",
 
-  "tooltip.vanillaenhanced.magic_block.tooltip": "This block emits some §bmagical§r properties (Not Yet Implemented)",
+  "tooltip.vanillaenhanced.magic_block.tooltip": "This block emits some §bmagical§r properties",
   "tooltip.vanillaenhanced.chisel.shift_down": "This chisel can change some blocks into brick versions",
   "tooltip.vanillaenhanced.chisel": "Press §eShift§r for some more information",
   "tooltip.vanillaenhanced.cauliflower.tooltip": "Tasty",
@@ -66,6 +66,10 @@
   "block.vanillaenhanced.cauliflower_crop": "Cauliflower Crop",
   "block.vanillaenhanced.cherry_sapling": "Cherry Sapling",
   "block.vanillaenhanced.cherry_leaves_crop": "Cherry Leaves",
+  "block.vanillaenhanced.sapphire_ore": "Sapphire Ore",
+  "block.vanillaenhanced.sapphire_deepslate_ore": "Deepslate Sapphire Ore",
+  "block.vanillaenhanced.sapphire_nether_ore": "Nether Sapphire Ore",
+  "block.vanillaenhanced.sapphire_end_ore": "End Sapphire Ore",
 
   "item.vanillaenhanced.endstone_brick": "End Stone Brick",
   "item.vanillaenhanced.iron_hammer_and_chisel": "§7Iron Hammer and Chisel§r",
@@ -78,17 +82,27 @@
   "item.vanillaenhanced.cauliflower_seeds": "Cauliflower Seeds",
   "item.vanillaenhanced.cherry": "Cherry",
   "item.vanillaenhanced.pruning_shears": "Pruning Shears",
+  "item.vanillaenhanced.sapphire": "Sapphire",
 
   "item.vanillaenhanced.endstone_sword": "Endstone Sword",
   "item.vanillaenhanced.endstone_pickaxe": "Endstone Pickaxe",
   "item.vanillaenhanced.endstone_axe": "Endstone Axe",
   "item.vanillaenhanced.endstone_shovel": "Endstone Shovel",
   "item.vanillaenhanced.endstone_hoe": "Endstone Hoe",
+  "item.vanillaenhanced.sapphire_sword": "Sapphire Sword",
+  "item.vanillaenhanced.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.vanillaenhanced.sapphire_axe": "Sapphire Axe",
+  "item.vanillaenhanced.sapphire_shovel": "Sapphire Shovel",
+  "item.vanillaenhanced.sapphire_hoe": "Sapphire Hoe",
 
   "item.vanillaenhanced.endstone_helmet": "Endstone Helmet",
   "item.vanillaenhanced.endstone_chestplate": "Endstone Chestplate",
   "item.vanillaenhanced.endstone_leggings": "Endstone Leggings",
-  "item.vanillaenhanced.endstone_boots": "Endstone Boots"
+  "item.vanillaenhanced.endstone_boots": "Endstone Boots",
+  "item.vanillaenhanced.sapphire_helmet": "Sapphire Helmet",
+  "item.vanillaenhanced.sapphire_chestplate": "Sapphire Chestplate",
+  "item.vanillaenhanced.sapphire_leggings": "Sapphire Leggings",
+  "item.vanillaenhanced.sapphire_boots": "Sapphire Boots"
 
 
 }
